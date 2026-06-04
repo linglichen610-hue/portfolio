@@ -1,0 +1,2205 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Kitty Chen — Brand × Content × Exploration</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@300;400&family=Noto+Serif+SC:wght@300;400&display=swap" rel="stylesheet">
+
+<!--
+
+╔══════════════════════════════════════════════════════════════╗
+
+║  图片替换指引 / IMAGE REPLACEMENT GUIDE                      ║
+
+╠══════════════════════════════════════════════════════════════╣
+
+║  1. 把此 HTML 与 images/ 文件夹放在同一目录，用浏览器打开    ║
+
+║  2. images/ 文件夹内需准备以下文件：                          ║
+
+║                                                              ║
+
+║  基础图片：                                                   ║
+
+║    profile.jpg       → 首屏形象照（证件照）                  ║
+
+║    guipu1.jpg        → 归朴民宿图片1（3:4竖图）              ║
+
+║    guipu2.jpg        → 归朴民宿图片2（3:4竖图）              ║
+
+║                                                              ║
+
+║  庆怜项目（图1-4，长图，点击放大）：                          ║
+
+║    qinglian1.jpg     → 庆怜活动图1（长图）                   ║
+
+║    qinglian2.jpg     → 庆怜麦力时刻图                        ║
+
+║    qinglian3.jpg     → 庆怜白羊座图                          ║
+
+║    qinglian4.jpg     → 庆怜礼盒3.0图                         ║
+
+║                                                              ║
+
+║  热点追踪（图5-6）：                                          ║
+
+║    trending1.jpg     → 马龙热搜截图（横图）                  ║
+
+║    trending2.jpg     → 高考放榜谭松韵（竖图）                ║
+
+║                                                              ║
+
+║  红双喜（图7）：                                             ║
+
+║    dhs.jpg           → 红双喜联名图                          ║
+
+║                                                              ║
+
+║  乐多多CP（图8-9）：                                         ║
+
+║    cp1.jpg           → 乐多多食物图                          ║
+
+║    cp2.jpg           → 七夕磕西皮大赛图                      ║
+
+║                                                              ║
+
+║  五一联名（图10-14，原比例）：                                ║
+
+║    wuyi1.jpg         → 麻辣王子（图10）                      ║
+
+║    wuyi2.jpg         → 菲诺厚椰乳（图11）                    ║
+
+║    wuyi3.jpg         → 好想你（图12）                        ║
+
+║    wuyi4.jpg         → RIO（图13）                           ║
+
+║    wuyi5.jpg         → 洛斐（图14）                          ║
+
+║                                                              ║
+
+║  节日品宣（图15-20，轮播）：                                  ║
+
+║    festival1.jpg     → 中秋节品宣（图15）                    ║
+
+║    festival2.jpg     → 父亲节睡觉（图16）                    ║
+
+║    festival3.jpg     → 父亲节雨伞（图17）                    ║
+
+║    festival4.jpg     → 妇女节职场（图18）                    ║
+
+║    festival5.jpg     → 妇女节防护服（图19）                  ║
+
+║    festival6.jpg     → 妇女节烹饪（图20）                    ║
+
+║                                                              ║
+
+║  小红书内容（8张封面）：                                      ║
+
+║    xhs1.jpg → 失业后住进了寺庙                               ║
+
+║    xhs2.jpg → 25岁出发去当义工                               ║
+
+║    xhs3.jpg → 来拉萨住南方小土豆                             ║
+
+║    xhs4.jpg → 虎跳峡人生照片                                 ║
+
+║    xhs5.jpg → 梅里雪山7点20分                                ║
+
+║    xhs6.jpg → 拉萨Citywalk                                   ║
+
+║    xhs7.jpg → 边牧连小狗都知道                               ║
+
+║                                                              ║
+
+║  足迹地图（每处2张，共14张，比例3:4）：                       ║
+
+║    place_baihaba1.jpg / place_baihaba2.jpg                   ║
+
+║    place_yili1.jpg   / place_yili2.jpg                       ║
+
+║    place_kailash1.jpg/ place_kailash2.jpg                    ║
+
+║    place_lhasa1.jpg  / place_lhasa2.jpg                      ║
+
+║    place_dali1.jpg   / place_dali2.jpg                       ║
+
+║    place_lijiang1.jpg/ place_lijiang2.jpg                    ║
+
+║    place_sz1.jpg     / place_sz2.jpg                         ║
+
+╚══════════════════════════════════════════════════════════════╝
+
+-->
+
+<style>
+
+:root{
+
+  --stone:#c8bfb0;--sand:#e8e0d5;--clay:#8b7355;--forest:#3d4f3c;
+
+  --deep-green:#2a3829;--offwhite:#f5f2ed;--warm-grey:#9a9088;
+
+  --charcoal:#2c2a27;--ink:#1a1917;--mist:#ede8e1;
+
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+
+html{scroll-behavior:smooth}
+
+body{font-family:'DM Sans',sans-serif;background:var(--offwhite);color:var(--charcoal);overflow-x:hidden}
+
+/* NAV */
+
+nav{position:fixed;top:0;left:0;right:0;z-index:200;padding:1.3rem 4rem;display:flex;justify-content:space-between;align-items:center;transition:all .3s}
+
+nav.scrolled{background:rgba(245,242,237,.95);backdrop-filter:blur(12px);border-bottom:1px solid rgba(200,191,176,.2)}
+
+.nav-logo{font-family:'Cormorant Garamond',serif;font-size:1.1rem;letter-spacing:.15em;color:var(--charcoal);text-decoration:none}
+
+.nav-right{display:flex;align-items:center;gap:2rem}
+
+.nav-links{display:flex;gap:2rem;list-style:none}
+
+.nav-links a{font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:var(--warm-grey);text-decoration:none;transition:color .25s}
+
+.nav-links a:hover{color:var(--charcoal)}
+
+.lang-toggle{display:flex;border:1px solid rgba(139,115,85,.3);overflow:hidden}
+
+.lang-btn{padding:.28rem .65rem;font-size:.63rem;letter-spacing:.1em;text-transform:uppercase;background:none;border:none;cursor:pointer;color:var(--warm-grey);font-family:'DM Sans',sans-serif;transition:all .2s}
+
+.lang-btn.active{background:var(--clay);color:#fff}
+
+/* I18N */
+
+[data-lang]{display:none}
+
+html[lang=en] [data-lang=en]{display:revert}
+
+html[lang=zh] [data-lang=zh]{display:revert}
+
+html[lang=en] span[data-lang=zh],html[lang=zh] span[data-lang=en]{display:none}
+
+html[lang=en] span[data-lang=en],html[lang=zh] span[data-lang=zh]{display:inline}
+
+/* REVEAL */
+
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .75s ease,transform .75s ease}
+
+.reveal.visible{opacity:1;transform:translateY(0)}
+
+/* HERO */
+
+#hero{min-height:100vh;display:grid;grid-template-columns:1fr 1fr;position:relative;overflow:hidden}
+
+.hero-left{padding:10rem 4rem 6rem;display:flex;flex-direction:column;justify-content:flex-end;position:relative;z-index:2}
+
+.hero-eyebrow{font-size:.66rem;letter-spacing:.2em;text-transform:uppercase;color:var(--warm-grey);margin-bottom:1.8rem}
+
+.hero-title{font-family:'Cormorant Garamond',serif;font-size:clamp(2.8rem,4.5vw,5rem);font-weight:300;line-height:1.05;color:var(--ink);margin-bottom:1.8rem}
+
+.hero-title em{font-style:italic;color:var(--clay)}
+
+.hero-sub{font-size:.88rem;line-height:1.88;color:var(--warm-grey);max-width:420px;margin-bottom:2.5rem}
+
+.hero-status{display:flex;flex-direction:column;gap:.65rem;margin-bottom:2.8rem}
+
+.s-item{display:flex;align-items:baseline;gap:1rem}
+
+.s-label{font-size:.6rem;letter-spacing:.15em;text-transform:uppercase;color:var(--stone);min-width:130px}
+
+.s-val{font-family:'DM Mono',monospace;font-size:.75rem;color:var(--charcoal)}
+
+.hero-right{position:relative;overflow:hidden}
+
+.hero-photo{position:absolute;inset:0;background:linear-gradient(135deg,var(--sand),var(--stone),var(--clay))}
+
+.hero-photo img{width:100%;height:100%;object-fit:cover;object-position:center top;display:block}
+
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(to right,var(--offwhite) 0%,transparent 38%)}
+
+.scroll-ind{display:flex;align-items:center;gap:1rem}
+
+.scroll-line{width:40px;height:1px;background:var(--stone);animation:sp 2s ease-in-out infinite}
+
+@keyframes sp{0%,100%{width:20px;opacity:.4}50%{width:50px;opacity:1}}
+
+.scroll-txt{font-size:.6rem;letter-spacing:.15em;text-transform:uppercase;color:var(--warm-grey)}
+
+/* SECTION */
+
+section{padding:8rem 4rem}
+
+.sec-label{font-size:.61rem;letter-spacing:.25em;text-transform:uppercase;color:var(--stone);margin-bottom:1.2rem;display:flex;align-items:center;gap:1.5rem}
+
+.sec-label::before{content:'';width:28px;height:1px;background:var(--stone);display:block}
+
+.sec-title{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,3.5vw,3.5rem);font-weight:300;line-height:1.1;color:var(--ink)}
+
+.sec-title-cn{font-family:'Noto Serif SC',serif;font-size:clamp(1.6rem,2.8vw,3rem);font-weight:300;line-height:1.2;color:var(--ink)}
+
+/* JOURNEY */
+
+#journey{background:var(--deep-green);padding:8rem 4rem;position:relative;overflow:hidden}
+
+#journey .sec-label{color:rgba(200,191,176,.4)}
+
+#journey .sec-label::before{background:rgba(200,191,176,.2)}
+
+#journey .sec-title,#journey .sec-title-cn{color:var(--sand)}
+
+.j-headline{font-size:.88rem;line-height:1.92;color:rgba(232,224,213,.55);max-width:520px;margin-bottom:3rem}
+
+.j-traits{display:flex;gap:1rem;flex-wrap:wrap;margin-bottom:4rem}
+
+.j-trait{padding:.4rem .9rem;border:1px solid rgba(200,191,176,.2);font-size:.62rem;letter-spacing:.08em;color:rgba(200,191,176,.6)}
+
+.j-grid{display:grid;grid-template-columns:1fr 1fr}
+
+.j-col{position:relative;padding-left:2.8rem}
+
+.j-col::before{content:'';position:absolute;left:0;top:0;bottom:0;width:1px;background:linear-gradient(to bottom,transparent,rgba(200,191,176,.18) 15%,rgba(200,191,176,.18) 85%,transparent)}
+
+.j-node{position:relative;margin-bottom:2.8rem}
+
+.j-node::before{content:'';position:absolute;left:-2.8rem;top:7px;width:6px;height:6px;border-radius:50%;background:var(--clay);transform:translateX(-2px)}
+
+.j-year{font-family:'DM Mono',monospace;font-size:.62rem;color:var(--clay);letter-spacing:.1em;margin-bottom:.28rem}
+
+.j-role{font-family:'Cormorant Garamond',serif;font-size:1.25rem;font-weight:400;color:var(--sand);margin-bottom:.2rem}
+
+.j-place{font-size:.7rem;color:rgba(200,191,176,.38)}
+
+.j-note{font-size:.76rem;color:rgba(200,191,176,.34);line-height:1.68;margin-top:.4rem}
+
+.j-badge{display:inline-block;margin-top:.5rem;padding:.2rem .55rem;background:rgba(200,191,176,.08);border:1px solid rgba(200,191,176,.15);font-size:.58rem;letter-spacing:.08em;color:var(--clay)}
+
+/* WORK */
+
+#work{background:var(--offwhite)}
+
+.w-grid{display:grid;grid-template-columns:1fr 1fr;gap:3px;margin-top:4rem}
+
+.w-card{position:relative;overflow:hidden;background:var(--mist);cursor:pointer}
+
+.w-card.full{grid-column:1/-1}
+
+.w-card:not(.full){aspect-ratio:4/3}
+
+.w-card.full.tall{aspect-ratio:16/7}
+
+.w-card.full.slim{aspect-ratio:16/5}
+
+.w-card-bg{position:absolute;inset:0;background-size:cover;background-position:center;transition:transform .6s}
+
+.w-card:hover .w-card-bg{transform:scale(1.04)}
+
+.w-card-front{position:absolute;inset:0;padding:2rem;display:flex;flex-direction:column;justify-content:flex-end;background:linear-gradient(to top,rgba(26,25,23,.88) 0%,rgba(26,25,23,.1) 55%,transparent 100%)}
+
+.w-tag{font-size:.56rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.38);margin-bottom:.6rem}
+
+.w-title{font-family:'Cormorant Garamond',serif;font-size:1.55rem;font-weight:300;color:#fff;line-height:1.2;margin-bottom:.35rem}
+
+.w-sub{font-size:.72rem;color:rgba(255,255,255,.4);line-height:1.5}
+
+.w-expand{position:absolute;inset:0;background:var(--deep-green);padding:2rem;display:flex;flex-direction:column;opacity:0;transition:opacity .4s;overflow-y:auto}
+
+.w-card:hover .w-expand{opacity:1}
+
+.w-ex-tag{font-size:.56rem;letter-spacing:.2em;text-transform:uppercase;color:var(--clay);margin-bottom:.8rem;flex-shrink:0}
+
+.w-ex-title{font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:300;color:var(--sand);margin-bottom:.7rem;flex-shrink:0}
+
+.w-ex-body{font-size:.74rem;line-height:1.82;color:rgba(232,224,213,.5);margin-bottom:.8rem}
+
+.w-stats{display:flex;gap:1.5rem;flex-wrap:wrap;margin-top:auto;flex-shrink:0}
+
+.w-stat-n{font-family:'Cormorant Garamond',serif;font-size:1.55rem;font-weight:300;color:var(--sand);display:block}
+
+.w-stat-l{font-size:.56rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(200,191,176,.3)}
+
+/* ── IMAGE GRID HELPERS ── */
+
+/* 3:4 thumbnail grid */
+
+.img-34-grid{display:flex;gap:3px;margin-bottom:.8rem}
+
+.img-34{flex:1;aspect-ratio:3/4;overflow:hidden;position:relative;background:rgba(255,255,255,.06);border:1px dashed rgba(200,191,176,.15);cursor:zoom-in;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:.3rem;font-size:.5rem;letter-spacing:.08em;text-transform:uppercase;color:rgba(200,191,176,.28)}
+
+.img-34 img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+
+.img-34-icon{font-size:1rem;opacity:.2}
+
+/* Lightbox for long images */
+
+.lightbox{position:fixed;inset:0;background:rgba(0,0,0,.88);z-index:1000;display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity .3s}
+
+.lightbox.open{opacity:1;pointer-events:auto}
+
+.lightbox img{max-width:90vw;max-height:90vh;object-fit:contain;display:block}
+
+.lightbox-close{position:absolute;top:1.5rem;right:2rem;background:none;border:none;color:#fff;font-size:2rem;cursor:pointer;line-height:1}
+
+/* Trending layout */
+
+.trending-layout{display:flex;flex-direction:row;gap:8px;margin-bottom:.8rem;align-items:flex-start}
+
+.trending-layout a{display:block;flex-shrink:0}
+
+.trending-main{flex-shrink:0;width:210px;height:373px;position:relative;background:rgba(255,255,255,.06);border:1px dashed rgba(200,191,176,.15);overflow:hidden;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:.3rem;font-size:.5rem;color:rgba(200,191,176,.28)}
+
+.trending-main img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+
+/* Guipu 2-photo layout */
+
+.guipu-photos{display:flex;gap:6px;margin-bottom:.8rem}
+
+.guipu-photo{flex:1;aspect-ratio:3/4;position:relative;background:rgba(255,255,255,.06);border:1px dashed rgba(200,191,176,.15);overflow:hidden;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:.3rem;font-size:.5rem;color:rgba(200,191,176,.28)}
+
+.guipu-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+
+/* DHS single image — 9:16 */
+
+..single-img{width:210px;height:373px;position:relative;background:rgba(255,255,255,.06);border:1px dashed rgba(200,191,176,.15);overflow:hidden;display:flex;align-items:center;justify-content:center;font-size:.5rem;color:rgba(200,191,176,.28);margin:0 auto .8rem}
+
+.single-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+
+/* CP 2 images — 9:16 */
+
+.cp-photos{display:flex;gap:6px;margin-bottom:.8rem;justify-content:center}
+
+.cp-photo{width:calc(50% - 3px);max-width:100px;aspect-ratio:9/16;position:relative;background:rgba(255,255,255,.06);border:1px dashed rgba(200,191,176,.15);overflow:hidden;display:flex;align-items:center;justify-content:center;font-size:.5rem;color:rgba(200,191,176,.28)}
+
+.cp-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+
+/* Wuyi original ratio scroll */
+
+.wuyi-scroll{display:flex;gap:6px;overflow-x:auto;margin-bottom:.8rem;padding-bottom:4px;scrollbar-width:thin;scrollbar-color:rgba(200,191,176,.2) transparent;min-height:180px}
+
+.wuyi-scroll::-webkit-scrollbar{height:3px}
+
+.wuyi-scroll::-webkit-scrollbar-thumb{background:rgba(200,191,176,.2);border-radius:2px}
+
+.wuyi-item{flex-shrink:0;width:110px;position:relative;background:rgba(255,255,255,.06);border:1px dashed rgba(200,191,176,.15);overflow:hidden;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:.25rem;font-size:.46rem;color:rgba(200,191,176,.25)}
+
+/* preserve original aspect ratio — each image sets its own height via padding-top trick */
+
+.wuyi-item.r-tall{padding-top:calc(110px * 2.4)} /* approx 9:21 */
+
+.wuyi-item img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+
+/* Festival carousel */
+
+.festival-carousel{position:relative;overflow:hidden;margin-bottom:.8rem}
+
+.festival-track{display:flex;gap:8px;transition:transform .4s ease;cursor:grab;align-items:flex-start}
+
+.festival-track:active{cursor:grabbing}
+
+.festival-slide{flex-shrink:0;width:210px;height:373px;position:relative;background:rgba(255,255,255,.06);border:1px dashed rgba(200,191,176,.15);overflow:hidden;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:.3rem;font-size:.48rem;color:rgba(200,191,176,.25)}
+
+.festival-slide img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+
+.festival-nav{display:flex;gap:.4rem;margin-top:.4rem}
+
+.festival-dot{width:18px;height:2px;background:rgba(200,191,176,.2);cursor:pointer;transition:background .2s}
+
+.festival-dot.active{background:var(--clay)}
+
+.festival-controls{display:flex;align-items:center;justify-content:space-between}
+
+.f-btn{background:none;border:1px solid rgba(200,191,176,.2);color:rgba(200,191,176,.5);padding:.2rem .5rem;font-size:.7rem;cursor:pointer;font-family:'DM Mono',monospace}
+
+.f-btn:hover{border-color:rgba(200,191,176,.5);color:var(--sand)}
+
+/* IMPACT */
+
+#impact{background:var(--sand);padding:8rem 4rem}
+
+.imp-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:2.5rem 2rem;margin-top:4rem}
+
+.imp-item{display:flex;flex-direction:column;gap:.4rem}
+
+.imp-num{font-family:'Cormorant Garamond',serif;font-size:3rem;font-weight:300;color:var(--ink);line-height:1}
+
+.imp-desc{font-size:.72rem;color:var(--warm-grey);line-height:1.6}
+
+.imp-lbl{font-size:.57rem;letter-spacing:.15em;text-transform:uppercase;color:var(--stone)}
+
+/* CONNECTOR */
+
+#connector{background:var(--ink);padding:8rem 4rem}
+
+.conn-wrap{display:grid;grid-template-columns:300px 1fr;gap:5rem;align-items:center}
+
+.conn-text .sec-label{color:rgba(200,191,176,.35)}
+
+.conn-text .sec-label::before{background:rgba(200,191,176,.18)}
+
+.conn-text .sec-title,.conn-text .sec-title-cn{color:var(--sand)}
+
+.conn-intro{font-size:.86rem;color:rgba(200,191,176,.42);line-height:1.9;margin:1.5rem 0 1.8rem}
+
+.conn-abilities{display:flex;flex-wrap:wrap;gap:.55rem;margin-bottom:1.8rem}
+
+.conn-ability{padding:.38rem .85rem;border:1px solid rgba(200,191,176,.2);font-size:.63rem;letter-spacing:.08em;color:rgba(200,191,176,.55)}
+
+.conn-copy{font-size:.8rem;line-height:1.95;color:rgba(200,191,176,.38);max-width:400px}
+
+.conn-copy strong{color:rgba(200,191,176,.65);font-weight:400}
+
+/* PHONE — realistic XHS simulation */
+
+.phone-outer{display:flex;justify-content:center;perspective:800px}
+
+.phone{width:260px;height:540px;background:#111;border-radius:38px;border:7px solid #252525;position:relative;overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,.6);transform:rotateY(-6deg) rotateX(2deg);transition:transform .4s}
+
+.phone:hover{transform:rotateY(0) rotateX(0)}
+
+.p-notch{position:absolute;top:0;left:50%;transform:translateX(-50%);width:80px;height:20px;background:#111;border-radius:0 0 12px 12px;z-index:10}
+
+.p-screen{width:100%;height:100%;background:#f5f5f5;overflow:hidden;display:flex;flex-direction:column}
+
+/* XHS Header */
+
+.xhs-app-header{background:#fff;padding:28px 12px 8px;flex-shrink:0;border-bottom:.5px solid #eee}
+
+.xhs-app-profile{display:flex;align-items:center;gap:8px;margin-bottom:6px}
+
+.xhs-app-av{width:36px;height:36px;border-radius:50%;overflow:hidden;flex-shrink:0;background:var(--stone);display:flex;align-items:center;justify-content:center;font-size:.7rem;font-weight:600;color:var(--ink)}
+
+.xhs-app-av img{width:100%;height:100%;object-fit:cover;display:block}
+
+.xhs-app-name{font-size:10px;font-weight:700;color:#111;font-family:sans-serif}
+
+.xhs-app-stats{font-size:7.5px;color:#999;font-family:sans-serif;margin-top:1px}
+
+.xhs-app-bio{font-size:7px;color:#666;font-family:sans-serif;line-height:1.4;margin-top:2px}
+
+.xhs-app-stats-row{display:flex;gap:10px;margin-top:4px}
+
+.xhs-app-stat{text-align:center}
+
+.xhs-app-stat-n{font-size:9px;font-weight:700;color:#111;font-family:sans-serif;display:block}
+
+.xhs-app-stat-l{font-size:6px;color:#999;font-family:sans-serif}
+
+/* XHS Scrollable feed */
+
+.xhs-feed{flex:1;overflow-y:auto;padding:6px;background:#f5f5f5;-webkit-overflow-scrolling:touch}
+
+.xhs-feed::-webkit-scrollbar{display:none}
+
+.xhs-masonry{display:grid;grid-template-columns:1fr 1fr;gap:5px}
+
+.xhs-note{background:#fff;border-radius:8px;overflow:hidden;text-decoration:none;display:block;cursor:pointer}
+
+.xhs-note-thumb{position:relative;aspect-ratio:3/4;background:var(--mist);overflow:hidden;display:flex;align-items:center;justify-content:center;font-size:1.2rem}
+
+.xhs-note-thumb img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+
+.xhs-note-meta{padding:4px 6px 6px}
+
+.xhs-note-title{font-size:7px;color:#222;line-height:1.4;font-family:sans-serif;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+
+.xhs-note-bottom{display:flex;align-items:center;justify-content:space-between;margin-top:3px}
+
+.xhs-note-user{display:flex;align-items:center;gap:3px}
+
+.xhs-note-av{width:12px;height:12px;border-radius:50%;background:var(--clay);overflow:hidden;flex-shrink:0}
+
+.xhs-note-av img{width:100%;height:100%;object-fit:cover}
+
+.xhs-note-uname{font-size:6px;color:#999;font-family:sans-serif}
+
+.xhs-note-likes{font-size:6px;color:#bbb;font-family:sans-serif;display:flex;align-items:center;gap:2px}
+
+/* MAP */
+
+#map-section{background:var(--deep-green);padding:8rem 4rem}
+
+#map-section .sec-label{color:rgba(200,191,176,.38)}
+
+#map-section .sec-label::before{background:rgba(200,191,176,.2)}
+
+#map-section .sec-title,#map-section .sec-title-cn{color:var(--sand)}
+
+.map-intro{font-size:.86rem;color:rgba(232,224,213,.48);max-width:480px;line-height:1.85;margin-bottom:.5rem}
+
+.map-hint{font-size:.6rem;letter-spacing:.15em;text-transform:uppercase;color:rgba(200,191,176,.28);margin-bottom:3rem;display:flex;align-items:center;gap:.8rem}
+
+.map-hint::before{content:'';width:18px;height:1px;background:rgba(200,191,176,.22);display:block}
+
+.map-layout{display:grid;grid-template-columns:1fr 300px;gap:3rem;align-items:start}
+
+.map-svg-wrap{position:relative;overflow:hidden;border:1px solid rgba(200,191,176,.08)}
+
+.map-svg-wrap svg{display:block;width:100%;height:auto}
+
+.map-tooltip{position:absolute;background:var(--offwhite);padding:.35rem .75rem;font-size:.68rem;color:var(--ink);pointer-events:none;white-space:nowrap;box-shadow:0 4px 20px rgba(0,0,0,.25);opacity:0;transition:opacity .2s;z-index:10;border-left:2px solid var(--clay)}
+
+.place-list{display:flex;flex-direction:column;max-height:520px;overflow-y:auto}
+
+.place-list::-webkit-scrollbar{width:2px}
+
+.place-list::-webkit-scrollbar-thumb{background:rgba(200,191,176,.15)}
+
+.pl-item{padding:.8rem 0 .8rem .8rem;border-bottom:1px solid rgba(200,191,176,.07);cursor:pointer;position:relative;transition:padding .2s}
+
+.pl-item::before{content:'';position:absolute;left:0;top:0;bottom:0;width:2px;background:var(--clay);transform:scaleY(0);transition:transform .2s;transform-origin:center}
+
+.pl-item:hover::before,.pl-item.active::before{transform:scaleY(1)}
+
+.pl-item:hover,.pl-item.active{padding-left:1.1rem}
+
+.pl-en{font-size:.57rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(200,191,176,.28);margin-bottom:.15rem;transition:color .2s}
+
+.pl-cn{font-family:'Noto Serif SC',serif;font-size:.95rem;font-weight:300;color:rgba(232,224,213,.42);transition:color .2s}
+
+.pl-role{font-size:.6rem;color:rgba(200,191,176,.22);margin-top:.1rem;font-style:italic}
+
+.pl-item:hover .pl-en,.pl-item.active .pl-en{color:var(--clay)}
+
+.pl-item:hover .pl-cn,.pl-item.active .pl-cn{color:var(--sand)}
+
+/* DETAIL OVERLAY — polaroid style */
+
+.detail-overlay{position:fixed;inset:0;z-index:500;display:flex;align-items:center;justify-content:center;background:rgba(26,25,23,.75);backdrop-filter:blur(8px);opacity:0;pointer-events:none;transition:opacity .3s}
+
+.detail-overlay.show{opacity:1;pointer-events:auto}
+
+.detail-box{background:#f8f4ef;width:90%;max-width:440px;max-height:88vh;overflow-y:auto;position:relative;transform:translateY(12px) rotate(-1deg);transition:all .35s;box-shadow:0 20px 60px rgba(0,0,0,.35),0 0 0 1px rgba(200,191,176,.1)}
+
+.detail-overlay.show .detail-box{transform:translateY(0) rotate(0deg)}
+
+.detail-photos{display:flex;gap:8px;padding:16px 16px 0}
+
+.detail-photo-slot{flex:1;aspect-ratio:3/4;overflow:hidden;background:var(--mist);position:relative;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:.4rem;border:1px dashed rgba(139,115,85,.2)}
+
+.detail-photo-slot img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+
+.detail-photo-slot .slot-hint{font-size:.55rem;letter-spacing:.1em;text-transform:uppercase;color:var(--warm-grey);text-align:center}
+
+.detail-photo-slot .slot-icon{font-size:1.5rem;opacity:.18}
+
+.detail-body{padding:1.4rem 1.4rem 2rem}
+
+.d-tag{font-size:.54rem;letter-spacing:.18em;text-transform:uppercase;color:var(--clay);margin-bottom:.4rem}
+
+.d-title{font-family:'Cormorant Garamond',serif;font-size:1.7rem;font-weight:300;color:var(--ink);margin-bottom:.15rem}
+
+.d-role{font-size:.75rem;color:var(--clay);font-style:italic;margin-bottom:.7rem}
+
+.d-desc{font-size:.8rem;line-height:1.85;color:var(--charcoal)}
+
+.d-close{position:absolute;top:.75rem;right:.75rem;background:rgba(26,25,23,.5);border:none;color:#fff;width:24px;height:24px;border-radius:50%;cursor:pointer;font-size:.75rem;display:flex;align-items:center;justify-content:center}
+
+.d-close:hover{background:var(--clay)}
+
+/* NOW */
+
+#now{background:var(--mist);padding:8rem 4rem}
+
+.now-intro{font-size:.88rem;line-height:1.9;color:var(--warm-grey);max-width:620px;margin-bottom:3rem}
+
+.now-intro strong{color:var(--charcoal);font-weight:500}
+
+.now-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.5rem;margin-top:2rem}
+
+.now-tag{padding:.6rem 1rem;border:1px solid var(--stone);font-size:.72rem;color:var(--warm-grey);text-align:center;transition:all .25s;cursor:default}
+
+.now-tag:hover{border-color:var(--clay);color:var(--clay);background:rgba(139,115,85,.04)}
+
+.now-quote{grid-column:1/-1;padding:2rem;border:1px solid var(--stone);margin-top:1.5rem}
+
+.now-quote p{font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-weight:300;line-height:1.8;color:var(--charcoal)}
+
+.now-quote p em{font-style:italic;color:var(--clay)}
+
+/* COLLABORATE */
+
+#collaborate{background:var(--clay);padding:9rem 4rem;text-align:center;position:relative;overflow:hidden}
+
+#collaborate::before{content:'OPEN';font-family:'Cormorant Garamond',serif;font-size:18rem;font-weight:300;color:rgba(255,255,255,.04);position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);white-space:nowrap;pointer-events:none}
+
+#collaborate .sec-label{color:rgba(255,255,255,.32);justify-content:center}
+
+#collaborate .sec-label::before{background:rgba(255,255,255,.16)}
+
+.col-title{font-family:'Cormorant Garamond',serif;font-size:clamp(2.8rem,5.5vw,5.5rem);font-weight:300;color:#fff;line-height:1.1;margin:1.8rem 0 2.5rem}
+
+.col-title em{font-style:italic;color:rgba(255,255,255,.5)}
+
+.col-chips{display:flex;justify-content:center;gap:.8rem;flex-wrap:wrap;margin-bottom:3rem}
+
+.col-chip{padding:.5rem 1.2rem;border:1px solid rgba(255,255,255,.2);font-size:.7rem;letter-spacing:.1em;color:rgba(255,255,255,.6);transition:all .25s;cursor:default}
+
+.col-chip:hover{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.45);color:#fff}
+
+.col-cta{display:inline-flex;align-items:center;gap:.8rem;padding:.9rem 2.4rem;background:#fff;color:var(--clay);text-decoration:none;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;transition:all .28s}
+
+.col-cta:hover{background:var(--ink);color:#fff}
+
+.col-info{margin-top:2.2rem;font-size:.7rem;color:rgba(255,255,255,.28)}
+
+footer{background:var(--ink);padding:2.5rem 4rem;display:flex;justify-content:space-between;align-items:center}
+
+.f-name{font-family:'Cormorant Garamond',serif;font-size:.95rem;color:var(--warm-grey);letter-spacing:.1em}
+
+.f-meta{font-family:'DM Mono',monospace;font-size:.65rem;color:rgba(154,144,136,.32)}
+
+@media(max-width:900px){
+
+  nav{padding:1.1rem 1.5rem}.nav-links{display:none}
+
+  section{padding:5rem 1.5rem}
+
+  #hero{grid-template-columns:1fr}.hero-right{display:none}.hero-left{padding:8rem 1.5rem 4rem}
+
+  .j-grid,.conn-wrap,.imp-grid,.now-grid,.map-layout{grid-template-columns:1fr}
+
+  .w-grid{grid-template-columns:1fr}.w-card:not(.full){aspect-ratio:4/3}
+
+  footer{flex-direction:column;gap:.8rem;text-align:center}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- LIGHTBOX -->
+
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+
+  <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+
+  <img id="lightboxImg" src="" alt="">
+
+</div>
+
+<nav id="nav">
+
+  <a href="#hero" class="nav-logo">Kitty Chen</a>
+
+  <div class="nav-right">
+
+    <ul class="nav-links">
+
+      <li><a href="#journey"><span data-lang="en">Journey</span><span data-lang="zh">经历</span></a></li>
+
+      <li><a href="#work"><span data-lang="en">Work</span><span data-lang="zh">作品</span></a></li>
+
+      <li><a href="#connector"><span data-lang="en">Content</span><span data-lang="zh">内容</span></a></li>
+
+      <li><a href="#map-section"><span data-lang="en">Places</span><span data-lang="zh">足迹</span></a></li>
+
+      <li><a href="#collaborate"><span data-lang="en">Connect</span><span data-lang="zh">合作</span></a></li>
+
+    </ul>
+
+    <div class="lang-toggle">
+
+      <button class="lang-btn active" onclick="setLang('en')">EN</button>
+
+      <button class="lang-btn" onclick="setLang('zh')">中</button>
+
+    </div>
+
+  </div>
+
+</nav>
+
+<!-- HERO -->
+
+<section id="hero">
+
+  <div class="hero-left">
+
+    <p class="hero-eyebrow reveal">Kitty · 陈玲丽 · 跑来跑去的栗栗</p>
+
+    <h1 class="hero-title reveal" style="transition-delay:.1s">
+
+      <span data-lang="en">Enter any market.<br>Read it. Build it. <em>Grow it.</em></span>
+
+      <span data-lang="zh" style="font-family:'Noto Serif SC',serif;font-weight:300">进入任何行业，<br>读懂逻辑，<em>推动增长</em>。</span>
+
+    </h1>
+
+    <p class="hero-sub reveal" style="transition-delay:.18s">
+
+      <span data-lang="en">Brand growth strategist. Celebrity marketing operator. Guesthouse business builder at 3,650m. Independent content creator. Every move: find the opportunity, build the system, make it grow.</span>
+
+      <span data-lang="zh">品牌增长策略、明星营销操盘、3650米民宿经营管理、独立内容创作。每一次转变：发现机会，建立系统，推动增长。</span>
+
+    </p>
+
+    <div class="hero-status reveal" style="transition-delay:.26s">
+
+      <div class="s-item"><span class="s-label"><span data-lang="en">Currently</span><span data-lang="zh">当前</span></span><span class="s-val">Lhasa → Shenzhen</span></div>
+
+      <div class="s-item"><span class="s-label"><span data-lang="en">Core edge</span><span data-lang="zh">核心优势</span></span><span class="s-val"><span data-lang="en">Market sensing · Brand building · Resource leverage</span><span data-lang="zh">市场洞察 · 品牌思维 · 资源整合</span></span></div>
+
+      <div class="s-item"><span class="s-label"><span data-lang="en">Territories</span><span data-lang="zh">足迹</span></span><span class="s-val">Tibet · Xinjiang · Yunnan</span></div>
+
+      <div class="s-item"><span class="s-label"><span data-lang="en">Open to</span><span data-lang="zh">欢迎</span></span><span class="s-val"><span data-lang="en">Brand Growth × Content Strategy × Business Development</span><span data-lang="zh">品牌增长 × 内容策略 × 商务拓展</span></span></div>
+
+    </div>
+
+    <div class="scroll-ind reveal" style="transition-delay:.34s">
+
+      <div class="scroll-line"></div>
+
+      <span class="scroll-txt"><span data-lang="en">Scroll</span><span data-lang="zh">向下探索</span></span>
+
+    </div>
+
+  </div>
+
+  <div class="hero-right">
+
+    <div class="hero-photo">
+
+      <!-- 替换: <img src="images/profile.jpg" alt="Kitty Chen"> -->
+
+      <img src="images/profile.jpg" alt="Kitty Chen" onerror="this.style.display='none'">
+
+    </div>
+
+    <div class="hero-overlay"></div>
+
+  </div>
+
+</section>
+
+<!-- JOURNEY -->
+
+<section id="journey">
+
+  <div class="sec-label reveal"><span data-lang="en">02 — A different kind of résumé</span><span data-lang="zh">02 — 一份不一样的履历</span></div>
+
+  <h2 class="reveal" style="transition-delay:.05s">
+
+    <span class="sec-title" data-lang="en">Not a straight line.<br>A <em>fuller</em> perspective.</span>
+
+    <span class="sec-title-cn" data-lang="zh">不是直线，<br>是更<em>完整</em>的商业视角。</span>
+
+  </h2>
+
+  <p class="j-headline reveal" style="transition-delay:.1s">
+
+    <span data-lang="en">My career path isn't linear — and that's the point. Every pivot took me into a new industry, a new business model, a new set of constraints. The result: a rare ability to understand markets from the inside, identify growth levers others miss, and build things that actually work.</span>
+
+    <span data-lang="zh">我的职业路径不是直线。但每一次转弯，都让我拥有更完整的商业视角。从品牌营销到民宿经营，从消费品到服务业，每一次进入陌生领域，都是一次对市场逻辑更深的理解。</span>
+
+  </p>
+
+  <div class="j-traits reveal" style="transition-delay:.15s">
+
+    <span class="j-trait"><span data-lang="en">Market sensing & brand strategy</span><span data-lang="zh">市场敏感度 · 品牌策略</span></span>
+
+    <span class="j-trait"><span data-lang="en">Full-chain project ownership</span><span data-lang="zh">全链路项目操盘</span></span>
+
+    <span class="j-trait"><span data-lang="en">Resource integration & business development</span><span data-lang="zh">资源整合 · 商务拓展</span></span>
+
+    <span class="j-trait"><span data-lang="en">0→1 builder mindset</span><span data-lang="zh">从0到1的主理人意识</span></span>
+
+  </div>
+
+  <div class="j-grid">
+
+    <div class="j-col">
+
+      <div class="j-node reveal">
+
+        <div class="j-year">2020 — 2022</div>
+
+        <div class="j-role"><span data-lang="en">HONlife · Brand Marketing & Growth</span><span data-lang="zh">好麦多 · 品牌营销与增长</span></div>
+
+        <div class="j-place">Shanghai / Shenzhen · FMCG</div>
+
+        <div class="j-note"><span data-lang="en">Responsible for full-chain brand growth — celebrity marketing strategy, fan ecosystem design, cross-brand collaboration, PR, and social commerce conversion. Drove 120M+ topic reads and ¥1.57M GMV. Created interaction formats later adopted by 10+ competitors.</span><span data-lang="zh">全链路负责品牌增长——明星营销策略、粉丝运营体系、异业合作、舆情管理、社交电商转化。驱动话题阅读超1.2亿、GMV达157万元，首创被10+竞品跟进的品牌互动模式。</span></div>
+
+        <span class="j-badge"><span data-lang="en">↑ Result: industry benchmark campaigns</span><span data-lang="zh">↑ 结果：行业标杆级品牌增长</span></span>
+
+      </div>
+
+      <div class="j-node reveal" style="transition-delay:.1s">
+
+        <div class="j-year">2022</div>
+
+        <div class="j-role"><span data-lang="en">Xianyudonghua · Brand Planner</span><span data-lang="zh">咸鱼动画 · 品牌策划</span></div>
+
+        <div class="j-place">Shenzhen · Animation / Food Brand</div>
+
+        <div class="j-note"><span data-lang="en">Switched industry. Owned client negotiations, cross-brand collab planning, and full-chain social content strategy for emerging food brand "Renleikuaile".</span><span data-lang="zh">跨行业转换。独立负责客户谈判、跨界联名策划和新兴食品品牌「人类快乐」的全域内容策略，从提案到落地执行。</span></div>
+
+        <span class="j-badge"><span data-lang="en">↑ Delivered: full-chain ownership</span><span data-lang="zh">↑ 结果：全链路独立操盘</span></span>
+
+      </div>
+
+    </div>
+
+    <div class="j-col">
+
+      <div class="j-node reveal" style="transition-delay:.05s">
+
+        <div class="j-year">2023 — 2026</div>
+
+        <div class="j-role"><span data-lang="en">Guipu Guesthouse · Hospitality Operations & Business Management</span><span data-lang="zh">归朴民宿 · 经营管理</span></div>
+
+        <div class="j-place">Lhasa, Tibet · 3,650m</div>
+
+        <div class="j-note"><span data-lang="en">Participated in building a guesthouse from zero — OTA strategy (Ctrip/Meituan/Fliggy), revenue management, staff coordination, service design, and crisis resolution. Served 10,000+ guests with zero major complaints. Content-led growth drove ¥30K+ revenue in month one.</span><span data-lang="zh">从0参与民宿经营搭建——OTA运营策略、收益管理、员工协调、服务设计、突发问题处理。累计接待10,000+旅客零重大客诉，内容营销驱动首月营业额突破3万元。</span></div>
+
+        <span class="j-badge"><span data-lang="en">↑ Result: 0→1 business with proven unit economics</span><span data-lang="zh">↑ 结果：从0到1的完整经营闭环</span></span>
+
+      </div>
+
+      <div class="j-node reveal" style="transition-delay:.15s">
+
+        <div class="j-year">Parallel track</div>
+
+        <div class="j-role"><span data-lang="en">Independent Creator · 跑来跑去的栗栗</span><span data-lang="zh">独立创作者 · 跑来跑去的栗栗</span></div>
+
+        <div class="j-place">小红书 · 抖音 · 微信视频号</div>
+
+        <div class="j-note"><span data-lang="en">Self-directed growth alongside full-time work — deliberately entered unfamiliar environments, built content from scratch, tested market reactions, and validated ideas in public. 1,913 followers, 23,000+ likes & saves.</span><span data-lang="zh">在全职工作之外主动探索——进入陌生环境，从零搭建内容体系，测试市场反应，公开验证想法。1913粉丝，2.3万获赞收藏。</span></div>
+
+        <span class="j-badge"><span data-lang="en">↑ Result: real market validation, independent voice</span><span data-lang="zh">↑ 结果：真实的市场验证与内容影响力</span></span>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- WORK -->
+
+<section id="work">
+
+  <div class="sec-label reveal"><span data-lang="en">03 — Selected Projects</span><span data-lang="zh">03 — 项目案例</span></div>
+
+  <h2 class="reveal" style="transition-delay:.05s">
+
+    <span class="sec-title" data-lang="en">Work that<br>actually moved things.</span>
+
+    <span class="sec-title-cn" data-lang="zh">真正推动了<br>某些事情的工作。</span>
+
+  </h2>
+
+  <div class="w-grid">
+
+    <!-- ① 庆怜 — 4张3:4缩略图，点击放大长图 -->
+
+    <div class="w-card reveal">
+
+      <div class="w-card-bg" style="background:linear-gradient(135deg,#f5e8d0,#e8a87c)"></div>
+
+      <div class="w-card-front">
+
+        <div class="w-tag"><span data-lang="en">Celebrity Marketing × Brand Growth · 2021</span><span data-lang="zh">明星营销 × 品牌增长 · 2021</span></div>
+
+        <div class="w-title"><span data-lang="en">HONlife × 庆怜</span><span data-lang="zh">好麦多 × 庆怜</span></div>
+
+        <div class="w-sub"><span data-lang="en">Fan ecosystem → commerce conversion engine</span><span data-lang="zh">粉丝运营体系 → 电商转化闭环</span></div>
+
+      </div>
+
+      <div class="w-expand">
+
+        <div class="w-ex-tag">HONlife · 2021 · Weibo × Tmall × OOH</div>
+
+        <div class="w-ex-title"><span data-lang="en">From Celebrity Equity to Brand Growth</span><span data-lang="zh">从明星资产到品牌增长</span></div>
+
+        <!-- 4张3:4缩略图，点击放大 -->
+
+        <!-- 替换方式：把 src="" 改为 src="images/qinglian1.jpg" 等，alt填图片说明 -->
+
+        <!-- 点击效果已内置，会弹出lightbox显示长图 -->
+
+        <div class="img-34-grid">
+
+          <div class="img-34" onclick="openLightbox('images/qinglian1.jpg')">
+
+            <img src="images/qinglian1.jpg" alt="庆怜活动图1" onerror="this.style.display='none'">
+
+            <span class="img-34-icon">🖼</span><span>qinglian1.jpg</span>
+
+          </div>
+
+          <div class="img-34" onclick="openLightbox('images/qinglian2.jpg')">
+
+            <img src="images/qinglian2.jpg" alt="麦力时刻" onerror="this.style.display='none'">
+
+            <span class="img-34-icon">🖼</span><span>qinglian2.jpg</span>
+
+          </div>
+
+          <div class="img-34" onclick="openLightbox('images/qinglian3.jpg')">
+
+            <img src="images/qinglian3.jpg" alt="庆怜白羊座" onerror="this.style.display='none'">
+
+            <span class="img-34-icon">🖼</span><span>qinglian3.jpg</span>
+
+          </div>
+
+          <div class="img-34" onclick="openLightbox('images/qinglian4.jpg')">
+
+            <img src="images/qinglian4.jpg" alt="礼盒3.0" onerror="this.style.display='none'">
+
+            <span class="img-34-icon">🖼</span><span>qinglian4.jpg</span>
+
+          </div>
+
+        </div>
+
+        <p style="font-size:.5rem;color:rgba(200,191,176,.3);margin-bottom:.7rem"><span data-lang="en">↑ Click thumbnails to view full poster</span><span data-lang="zh">↑ 点击缩略图查看完整长图</span></p>
+
+        <div class="w-ex-body"><span data-lang="en">Designed the full brand growth system around the celebrity partnership — fan ecosystem architecture, weekly content unlock strategy, Tmall gift box 2.0 launch, UGC seeding (#给庆怜安利花样好麦多#), multi-city OOH, and gamification mechanics converting fan engagement directly to purchase. Cross-department coordination across marketing, e-commerce, and creative teams throughout.</span><span data-lang="zh">围绕代言人设计完整品牌增长体系——粉丝运营架构、每周内容解锁策略、礼盒2.0上线、UGC话题引导#给庆怜安利花样好麦多#、多城市大屏联动、游戏化激励机制将粉丝互动直接转化为购买。全程跨部门协同市场、电商、创意团队推进落地。</span></div>
+
+        <div class="w-stats">
+
+          <div><span class="w-stat-n">1.2亿</span><span class="w-stat-l">Topic reads</span></div>
+
+          <div><span class="w-stat-n">11,078</span><span class="w-stat-l">Units sold</span></div>
+
+          <div><span class="w-stat-n">¥1.57M</span><span class="w-stat-l">GMV</span></div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- ② 热点追踪 — 横图+竖图布局 -->
+
+    <div class="w-card reveal" style="transition-delay:.06s">
+
+      <div class="w-card-bg" style="background:linear-gradient(135deg,#2c3e2c,#1a2a1a)"></div>
+
+      <div class="w-card-front">
+
+        <div class="w-tag"><span data-lang="en">Real-time Marketing</span><span data-lang="zh">热点追踪 × 即时营销</span></div>
+
+        <div class="w-title"><span data-lang="en">Trending Moments</span><span data-lang="zh">实时热点 即时引爆</span></div>
+
+        <div class="w-sub"><span data-lang="en">1h 200K · 4h 1M reads</span><span data-lang="zh">1h阅读20万+ · 4h破百万</span></div>
+
+      </div>
+
+      <div class="w-expand">
+
+        <div class="w-ex-tag">HONlife · 2021–2022 · Weibo</div>
+
+        <div class="w-ex-title"><span data-lang="en">Turn the News into a Brand Moment</span><span data-lang="zh">把热点变成品牌事件</span></div>
+
+        <!-- 左边横图(16:9)马龙截图 + 右边竖图谭松韵 -->
+
+        <!-- 替换: trending1.jpg=马龙热搜截图, trending2.gif=谭松韵高考图 -->
+
+  <div class="trending-layout">
+
+          <a href="https://weibo.com/6025827112/LgtgadpdP" target="_blank" style="display:block;text-decoration:none">
+
+            <div class="trending-main">
+
+              <img src="images/trending1.jpg" alt="马龙热搜179万" onerror="this.style.display='none'">
+
+              <span style="font-size:.48rem;color:rgba(200,191,176,.25);position:relative">trending1.jpg<br><span data-lang="en">Ma Long trending · 4h 1M</span><span data-lang="zh">马龙热搜 · 4h破百万</span></span>
+
+            </div>
+
+          </a>
+
+          <div class="trending-main">
+
+            <img src="images/trending2.jpg" alt="谭松韵高考放榜" onerror="this.style.display='none'">
+
+            <span style="font-size:.46rem;color:rgba(200,191,176,.22);text-align:center;position:relative">trending2.jpg<br><span data-lang="en">1h 200K</span><span data-lang="zh">1h阅读20w+</span></span>
+
+          </div>
+
+        </div>
+
+        <div class="w-ex-body"><span data-lang="en">High-score day: captured real-time social mood, repurposed celebrity assets in 1h → 200K reads. Ma Long BTS footage × climbing trending topic → 1M reads in 4h. Post later pinned to trending #1 for two consecutive days.</span><span data-lang="zh">高考成绩放榜日实时捕捉社会情绪，1小时内转化代言人物料博文阅读量突破20万；马龙拍摄花絮结合实时上升热搜，4小时阅读量破百万，该条微博连续两天挂在话题热门第一位。</span></div>
+
+        <div class="w-stats"><div><span class="w-stat-n">200K+</span><span class="w-stat-l">1h reads</span></div><div><span class="w-stat-n">1M+</span><span class="w-stat-l">4h reads</span></div></div>
+
+      </div>
+
+    </div>
+
+    <!-- ③ 归朴民宿 — 2张3:4 -->
+
+    <div class="w-card reveal" style="transition-delay:.08s">
+
+      <div class="w-card-bg" style="background:linear-gradient(135deg,#8b7355,#2a3829)"></div>
+
+      <div class="w-card-front">
+
+        <div class="w-tag"><span data-lang="en">Hospitality Operations & Business Management · 3,650m</span><span data-lang="zh">民宿经营管理 · 3650米</span></div>
+
+        <div class="w-title"><span data-lang="en">归朴民宿 · Lhasa</span><span data-lang="zh">归朴民宿 · 拉萨</span></div>
+
+        <div class="w-sub"><span data-lang="en">0→1 business build · 10K+ guests · ¥30K first month</span><span data-lang="zh">从0参与经营搭建 · 1万+旅客 · 首月营收3万+</span></div>
+
+      </div>
+
+      <div class="w-expand">
+
+        <div class="w-ex-tag">拉萨归朴民宿 · 2023–2026</div>
+
+        <div class="w-ex-title"><span data-lang="en">Building a Business at 3,650m</span><span data-lang="zh">在3650米经营一家民宿</span></div>
+
+        <!-- 2张3:4照片 -->
+
+        <!-- 替换: guipu1.jpg, guipu2.jpg -->
+
+        <div class="guipu-photos">
+
+          <div class="guipu-photo">
+
+            <img src="images/guipu1.jpg" alt="归朴民宿1" onerror="this.style.display='none'">
+
+            <span class="img-34-icon">🏠</span><span style="font-size:.48rem;color:rgba(200,191,176,.25)">guipu1.jpg</span>
+
+          </div>
+
+          <div class="guipu-photo">
+
+            <img src="images/guipu2.jpg" alt="归朴民宿2" onerror="this.style.display='none'">
+
+            <span class="img-34-icon">🏠</span><span style="font-size:.48rem;color:rgba(200,191,176,.25)">guipu2.jpg</span>
+
+          </div>
+
+        </div>
+
+        <div class="w-ex-body"><span data-lang="en">Participated in 0→1 guesthouse operations — OTA platform strategy (Ctrip/Meituan/Fliggy), dynamic room & revenue management, staff coordination, guest experience design, and large-scale crisis resolution. Served 10,000+ guests with zero major complaints. Content marketing tied to Tibetan festivals and travel seasons drove ¥30K+ in revenue in month one. Sold tourism products and managed end-to-end service design across the entire guest journey.</span><span data-lang="zh">全程参与民宿从0到1经营搭建——OTA运营策略（携程/美团/飞猪）、房态与收益管理、员工协调、旅游产品销售、突发问题处理与客诉解决。累计服务10,000+旅客零重大客诉。结合藏地节日与旅游淡旺季的内容营销，推动首月营业额突破3万元，形成完整经营闭环。</span></div>
+
+        <div class="w-stats"><div><span class="w-stat-n">10K+</span><span class="w-stat-l">Guests</span></div><div><span class="w-stat-n">¥30K</span><span class="w-stat-l">1st month</span></div><div><span class="w-stat-n">0</span><span class="w-stat-l">Complaints</span></div></div>
+
+      </div>
+
+    </div>
+
+    <!-- ④ 红双喜 — 左文案右9:16图 -->
+
+    <div class="w-card reveal" style="transition-delay:.1s">
+
+      <div class="w-card-bg" style="background:linear-gradient(135deg,#c0313a,#8b1520)"></div>
+
+      <div class="w-card-front">
+
+        <div class="w-tag">Cross-brand IP · 2021</div>
+
+        <div class="w-title"><span data-lang="en">HONlife × DHS<br>Brand Collab Through Value Exchange</span><span data-lang="zh">好麦多 × 红双喜<br>商务谈判 × 品牌资源置换</span></div>
+
+        <div class="w-sub"><span data-lang="en">Business negotiation · Resource exchange · 3K+ followers</span><span data-lang="zh">商务谈判 · 资源置换 · 涨粉3000+</span></div>
+
+      </div>
+
+      <!-- expand: flex-row — 左文案 右9:16图 -->
+
+      <div class="w-expand" style="flex-direction:row;gap:2.5rem;padding:2rem;align-items:stretch">
+
+        <!-- 左：文案 -->
+
+        <div style="flex:1;display:flex;flex-direction:column;min-width:0">
+
+          <div class="w-ex-tag">好麦多 × 红双喜 · Aug 2021</div>
+
+          <div class="w-ex-title"><span data-lang="en">Limited Budget. Maximum Value. Still Won.</span><span data-lang="zh">预算有限，价值交换，最终破局</span></div>
+
+          <div class="w-ex-body" style="flex:1"><span data-lang="en">With limited budget, identified and pursued a high-value partnership opportunity. After multiple rejections, refined the value-exchange pitch until it was compelling enough to close — securing Ma Long portrait rackets and table tennis balls through a creative resource trade. The campaign performed so well that DHS voluntarily added a full suite of Ma Long merchandise as bonus sponsorship. Brand collaboration drove 3,000+ high-engagement new followers.</span><span data-lang="zh">在预算有限的情况下，主动识别并推进高价值品牌合作机会。多次被拒后持续打磨商务提案，以精准的价值交换方案最终谈成合作——置换到马龙定制肖像球拍与乒乓球。活动效果显著，红双喜主动追加全套马龙周边赞助。联动上线后品牌净增高粘性精准粉丝3000+。</span></div>
+
+          <div class="w-stats">
+
+            <div><span class="w-stat-n">3K+</span><span class="w-stat-l">New followers</span></div>
+
+            <div><span class="w-stat-n">Value</span><span class="w-stat-l">Exchange deal</span></div>
+
+          </div>
+
+        </div>
+
+        <!-- 右：9:16图，点击放大 -->
+
+        <!-- ★ 替换图片: images/dhs.jpg (9:16竖图) -->
+
+        <div onclick="openLightbox('images/dhs.jpg')" title="点击查看大图"
+
+          style="flex-shrink:0;width:42%;aspect-ratio:9/16;position:relative;background:rgba(255,255,255,.06);border:1px dashed rgba(200,191,176,.2);overflow:hidden;cursor:zoom-in;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:.4rem;max-width:220px">
+
+          <img src="images/dhs.jpg" alt="红双喜联名" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" onerror="this.style.display='none'">
+
+          <span style="font-size:1.2rem;opacity:.2;position:relative">🖼</span>
+
+          <span style="font-size:.45rem;color:rgba(200,191,176,.3);position:relative;text-align:center">dhs.jpg<br>9:16</span>
+
+          <span style="position:absolute;bottom:6px;right:6px;font-size:.55rem;color:rgba(200,191,176,.5);background:rgba(0,0,0,.4);padding:2px 5px;border-radius:2px">🔍 查看大图</span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- ⑤ 乐多多CP — 左文案 右两张9:16大图 -->
+
+    <div class="w-card full slim reveal" style="transition-delay:.12s">
+
+      <div class="w-card-bg" style="background:linear-gradient(90deg,#f2e8f5,#d4b8e0,#f8c8d4)"></div>
+
+      <div class="w-card-front">
+
+        <div class="w-tag">Cross-brand Growth Strategy · 2021</div>
+
+        <div class="w-title"><span data-lang="en">HONlife × Unilever「乐多多CP」</span><span data-lang="zh">好麦多 × 联合利华「乐多多CP」</span></div>
+
+        <div class="w-sub"><span data-lang="en">Leverage platform moment → top brand pair · 30M impressions</span><span data-lang="zh">借势平台活动 · 放大品牌影响力 · 3000万曝光</span></div>
+
+      </div>
+
+      <!-- expand: 左文案 右两张9:16图并排，撑满高度 -->
+
+      <div class="w-expand" style="flex-direction:row;gap:0;padding:0;align-items:stretch">
+
+        <!-- 左：文案区，内部padding -->
+
+        <div style="flex:1;display:flex;flex-direction:column;padding:2rem 2rem 2rem 2rem;min-width:0">
+
+          <div class="w-ex-tag">好麦多 × 联合利华 · 七夕 2021 · #磕西皮大赛#</div>
+
+          <div class="w-ex-title"><span data-lang="en">Cross-brand Leverage Strategy</span><span data-lang="zh">跨品牌借势增长策略</span></div>
+
+          <div class="w-ex-body" style="flex:1"><span data-lang="en">Identified Tmall's #磕西皮大赛# as a strategic leverage opportunity — entered as "乐多多CP" to borrow the platform's traffic pool and amplify brand reach. Navigated internal approval barriers across multiple stakeholder teams to bring the collab to life. Became the highest-heat brand pair in the entire campaign, landing in official Top 3 gift boxes. A cross-brand strategy built on market timing, not budget.</span><span data-lang="zh">识别天猫#磕西皮大赛#为战略借势机会，以「乐多多CP」切入活动流量池放大品牌曝光。跨团队协调推动合作落地，最终成为活动期间热度最高品牌组合，入选官方TOP3礼盒。这是一次依靠市场时机与策略设计，而非预算规模的跨品牌增长案例。</span></div>
+
+          <div class="w-stats">
+
+            <div><span class="w-stat-n">30M+</span><span class="w-stat-l">Impressions</span></div>
+
+            <div><span class="w-stat-n">Top 3</span><span class="w-stat-l">Gift box</span></div>
+
+          </div>
+
+        </div>
+
+        <!-- 右：两张9:16图并排，撑满卡片高度 -->
+
+        <!-- ★ 替换: images/cp1.jpg, images/cp2.jpg (均为9:16竖图) -->
+
+        <div style="display:flex;gap:0;flex-shrink:0;width:40%;min-width:180px;align-self:stretch">
+
+          <div onclick="openLightbox('images/cp1.jpg')" title="点击查看大图"
+
+            style="flex:1;position:relative;background:rgba(255,255,255,.06);border-left:1px solid rgba(200,191,176,.1);overflow:hidden;cursor:zoom-in;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:.4rem">
+
+            <img src="images/cp1.jpg" alt="乐多多食物" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" onerror="this.style.display='none'">
+
+            <span style="font-size:1.2rem;opacity:.2;position:relative">🖼</span>
+
+            <span style="font-size:.42rem;color:rgba(200,191,176,.28);position:relative">cp1.jpg</span>
+
+            <span style="position:absolute;bottom:6px;right:6px;font-size:.5rem;color:rgba(200,191,176,.5);background:rgba(0,0,0,.4);padding:2px 5px;border-radius:2px">🔍</span>
+
+          </div>
+
+          <div onclick="openLightbox('images/cp2.jpg')" title="点击查看大图"
+
+            style="flex:1;position:relative;background:rgba(255,255,255,.06);border-left:1px solid rgba(200,191,176,.1);overflow:hidden;cursor:zoom-in;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:.4rem">
+
+            <img src="images/cp2.jpg" alt="七夕磕西皮大赛" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" onerror="this.style.display='none'">
+
+            <span style="font-size:1.2rem;opacity:.2;position:relative">🖼</span>
+
+            <span style="font-size:.42rem;color:rgba(200,191,176,.28);position:relative">cp2.jpg</span>
+
+            <span style="position:absolute;bottom:6px;right:6px;font-size:.5rem;color:rgba(200,191,176,.5);background:rgba(0,0,0,.4);padding:2px 5px;border-radius:2px">🔍</span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- ⑥ 五一五品牌 — 5张原比例横向滚动 -->
+
+    <div class="w-card full reveal" style="transition-delay:.14s">
+
+      <!-- 占位：padding-top撑出卡片高度 = 图片(100%*16/9/5) + 文案约180px -->
+
+      <div style="padding-top:calc(100% * 16 / 9 / 5 + 180px)"></div>
+
+      <div class="w-card-bg" style="background:linear-gradient(90deg,#e8d4b8,#c8d4c5,#d4c8e8)"></div>
+
+      <div class="w-card-front">
+
+        <div class="w-tag"><span data-lang="en">Matrix Collaboration · 五一 2022</span><span data-lang="zh">矩阵联名 · 五一 2022</span></div>
+
+        <div class="w-title"><span data-lang="en">5 Brands × 5 Lifestyle Scenes</span><span data-lang="zh">5品牌 × 5生活方式场景</span></div>
+
+        <div class="w-sub">菲诺 × RIO × 洛斐 × 麻辣王子 × 好想你 — 92.5万曝光</div>
+
+      </div>
+
+      <div class="w-expand" style="padding:0;overflow-y:auto">
+
+        <!-- 图片区：5张9:16并排，padding-top撑出正确高度 -->
+
+        <!-- ★ 替换: wuyi1-5.jpg，均为9:16比例 -->
+
+        <div style="position:relative;width:100%;padding-top:calc(100% * 16 / 9 / 5)">
+
+          <div style="position:absolute;inset:0;display:flex;gap:3px">
+
+            <div style="flex:1;position:relative;background:rgba(255,255,255,.06);border:1px solid rgba(200,191,176,.08);overflow:hidden;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:.4rem">
+
+              <img src="images/wuyi1.jpg" alt="麻辣王子" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" onerror="this.style.display='none'">
+
+              <span style="font-size:1.2rem;opacity:.2;position:relative">🖼</span>
+
+              <span style="font-size:.42rem;color:rgba(200,191,176,.28);position:relative;text-align:center">wuyi1.jpg<br>麻辣王子</span>
+
+            </div>
+
+            <div style="flex:1;position:relative;background:rgba(255,255,255,.06);border:1px solid rgba(200,191,176,.08);overflow:hidden;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:.4rem">
+
+              <img src="images/wuyi2.jpg" alt="菲诺" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" onerror="this.style.display='none'">
+
+              <span style="font-size:1.2rem;opacity:.2;position:relative">🖼</span>
+
+              <span style="font-size:.42rem;color:rgba(200,191,176,.28);position:relative;text-align:center">wuyi2.jpg<br>菲诺</span>
+
+            </div>
+
+            <div style="flex:1;position:relative;background:rgba(255,255,255,.06);border:1px solid rgba(200,191,176,.08);overflow:hidden;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:.4rem">
+
+              <img src="images/wuyi3.jpg" alt="好想你" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" onerror="this.style.display='none'">
+
+              <span style="font-size:1.2rem;opacity:.2;position:relative">🖼</span>
+
+              <span style="font-size:.42rem;color:rgba(200,191,176,.28);position:relative;text-align:center">wuyi3.jpg<br>好想你</span>
+
+            </div>
+
+            <div style="flex:1;position:relative;background:rgba(255,255,255,.06);border:1px solid rgba(200,191,176,.08);overflow:hidden;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:.4rem">
+
+              <img src="images/wuyi4.jpg" alt="RIO" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" onerror="this.style.display='none'">
+
+              <span style="font-size:1.2rem;opacity:.2;position:relative">🖼</span>
+
+              <span style="font-size:.42rem;color:rgba(200,191,176,.28);position:relative;text-align:center">wuyi4.jpg<br>RIO</span>
+
+            </div>
+
+            <div style="flex:1;position:relative;background:rgba(255,255,255,.06);border:1px solid rgba(200,191,176,.08);overflow:hidden;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:.4rem">
+
+              <img src="images/wuyi5.jpg" alt="洛斐" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" onerror="this.style.display='none'">
+
+              <span style="font-size:1.2rem;opacity:.2;position:relative">🖼</span>
+
+              <span style="font-size:.42rem;color:rgba(200,191,176,.28);position:relative;text-align:center">wuyi5.jpg<br>洛斐</span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- 文案区：图片下方 -->
+
+        <div style="padding:1.5rem 2rem 2rem">
+
+          <div class="w-ex-tag">好麦多 × 五品牌 · May 2022 · #这才是我想要的假期#</div>
+
+          <div class="w-ex-title"><span data-lang="en">One Holiday, Five Universes</span><span data-lang="zh">一个假期，五个生活宇宙</span></div>
+
+          <div class="w-ex-body"><span data-lang="en">Five brands, five Golden Week lifestyle universes — lazy mornings with coconut milk, outdoor picnics with RIO, work-night fuel with Lofree, spicy road trip snacks, and light travel with 好想你. Total campaign: 925K impressions, 2,000+ new followers.</span><span data-lang="zh">五一期间联合五个品牌，精准对应五种生活方式场景——厚椰乳慵懒早晨、RIO户外野餐、洛斐加班陪伴、麻辣王子公路旅途、好想你探亲轻礼。话题#这才是我想要的假期# 总曝光92.5万次，净增精准新粉2000+。</span></div>
+
+          <div class="w-stats"><div><span class="w-stat-n">92.5万</span><span class="w-stat-l">Impressions</span></div><div><span class="w-stat-n">5</span><span class="w-stat-l">Brand partners</span></div><div><span class="w-stat-n">2K+</span><span class="w-stat-l">New followers</span></div></div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- ⑦ 节日品宣 — 6张可滑动轮播 -->
+
+    <div class="w-card full tall reveal" style="transition-delay:.16s">
+
+      <div class="w-card-bg" style="background:linear-gradient(135deg,#f5e8d5,#e8c8b5,#d4c0e8)"></div>
+
+      <div class="w-card-front">
+
+        <div class="w-tag"><span data-lang="en">Brand Visual × Festive · 2020–2022</span><span data-lang="zh">品牌视觉 × 节日品宣 · 2020–2022</span></div>
+
+        <div class="w-title"><span data-lang="en">Festivals as Brand Canvas</span><span data-lang="zh">用节日做品牌画布</span></div>
+
+        <div class="w-sub"><span data-lang="en">Women's Day · Father's Day · Mid-Autumn</span><span data-lang="zh">妇女节 · 父亲节 · 中秋节</span></div>
+
+      </div>
+
+      <div class="w-expand">
+
+        <div class="w-ex-tag">HONlife Brand Visual · 2020–2022</div>
+
+        <div class="w-ex-title"><span data-lang="en">Festivals as Brand Canvas</span><span data-lang="zh">用节日做品牌画布</span></div>
+
+        <!-- 6张3:4图片轮播，每次显示3张，可拖动 -->
+
+        <!-- 替换: festival1-6.jpg -->
+
+ <div class="festival-carousel" id="festCarousel">
+
+          <div class="festival-track" id="festTrack">
+
+             <div class="festival-slide" onclick="openLightbox('images/festival1.jpg')" style="cursor:zoom-in"><img src="images/festival1.jpg" alt="中秋节品宣" onerror="this.style.display='none'"><span style="font-size:.46rem;color:rgba(200,191,176,.22);position:relative">festival1.jpg<br>中秋节</span></div>
+
+              <div class="festival-slide" onclick="openLightbox('images/festival2.jpg')" style="cursor:zoom-in"><img src="images/festival2.jpg" alt="父亲节睡觉" onerror="this.style.display='none'"><span style="font-size:.46rem;color:rgba(200,191,176,.22);position:relative">festival2.jpg<br>父亲节</span></div>
+
+              <div class="festival-slide" onclick="openLightbox('images/festival3.jpg')" style="cursor:zoom-in"><img src="images/festival3.jpg" alt="父亲节雨伞" onerror="this.style.display='none'"><span style="font-size:.46rem;color:rgba(200,191,176,.22);position:relative">festival3.jpg<br>父亲节</span></div>
+
+              <div class="festival-slide" onclick="openLightbox('images/festival4.jpg')" style="cursor:zoom-in"><img src="images/festival4.jpg" alt="妇女节职场" onerror="this.style.display='none'"><span style="font-size:.46rem;color:rgba(200,191,176,.22);position:relative">festival4.jpg<br>妇女节</span></div>
+
+              <div class="festival-slide" onclick="openLightbox('images/festival5.jpg')" style="cursor:zoom-in"><img src="images/festival5.jpg" alt="妇女节防护服" onerror="this.style.display='none'"><span style="font-size:.46rem;color:rgba(200,191,176,.22);position:relative">festival5.jpg<br>妇女节</span></div>
+
+              <div class="festival-slide" onclick="openLightbox('images/festival6.jpg')" style="cursor:zoom-in"><img src="images/festival6.jpg" alt="妇女节烹饪" onerror="this.style.display='none'"><span style="font-size:.46rem;color:rgba(200,191,176,.22);position:relative">festival6.jpg<br>妇女节</span></div>
+
+          </div>
+
+        <div class="festival-controls">
+
+          <button class="f-btn" onclick="festPrev()">←</button>
+
+          <div class="festival-nav">
+
+            <div class="festival-dot active" onclick="festGoTo(0)"></div>
+
+            <div class="festival-dot" onclick="festGoTo(1)"></div>
+
+          </div>
+
+          <button class="f-btn" onclick="festNext()">→</button>
+
+        </div>
+
+        <div class="w-ex-body" style="margin-top:.8rem"><span data-lang="en">Seasonal visual campaigns — weaving HONlife products into culturally resonant festival moments. Women's Day featured three distinct female portraits. Father's Day used warm illustration. Mid-Autumn used the brand mascot "小HON" to convey warmth and longing.</span><span data-lang="zh">策划执行妇女节、父亲节、中秋节节日品宣，将好麦多产品融入节日情感场景。妇女节以三种女性形象呈现多元价值，父亲节用温暖插画表达父爱，中秋节以品牌形象「小HON」传递思念与温情。</span></div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- IMPACT -->
+
+<section id="impact">
+
+  <div class="sec-label reveal"><span data-lang="en">04 — Real Numbers</span><span data-lang="zh">04 — 真实数据</span></div>
+
+  <h2 class="reveal" style="transition-delay:.05s"><span class="sec-title" data-lang="en">Numbers that<br>actually happened.</span><span class="sec-title-cn" data-lang="zh">实实在在<br>发生过的数字。</span></h2>
+
+  <div class="imp-grid">
+
+    <div class="imp-item reveal"><div class="imp-num" data-target="120000000">—</div><div class="imp-desc"><span data-lang="en">Weibo topic reads across celebrity campaigns</span><span data-lang="zh">微博代言人话题累计阅读量</span></div><div class="imp-lbl">Weibo reach</div></div>
+
+    <div class="imp-item reveal" style="transition-delay:.05s"><div class="imp-num" data-target="10000">—</div><div class="imp-desc"><span data-lang="en">High-value guests served at Lhasa guesthouse</span><span data-lang="zh">拉萨归朴民宿累计接待旅客</span></div><div class="imp-lbl">Guests</div></div>
+
+    <div class="imp-item reveal" style="transition-delay:.1s"><div class="imp-num" data-target="1575905">—</div><div class="imp-desc"><span data-lang="en">GMV driven during celebrity campaign period</span><span data-lang="zh">代言人活动期间驱动GMV</span></div><div class="imp-lbl">Campaign GMV ¥</div></div>
+
+    <div class="imp-item reveal" style="transition-delay:.15s"><div class="imp-num" data-target="30000000">—</div><div class="imp-desc"><span data-lang="en">Impressions for Unilever cross-brand event</span><span data-lang="zh">联合利华跨界活动曝光量</span></div><div class="imp-lbl">Event impressions</div></div>
+
+    <div class="imp-item reveal" style="transition-delay:.2s"><div class="imp-num" data-target="5">—</div><div class="imp-desc"><span data-lang="en">Years across FMCG, hospitality & content creation</span><span data-lang="zh">横跨快消品牌、民宿与内容创作年限</span></div><div class="imp-lbl">Years</div></div>
+
+    <div class="imp-item reveal" style="transition-delay:.25s"><div class="imp-num" data-target="10">—</div><div class="imp-desc"><span data-lang="en">Brands that copied HONlife's "counter-borrow" format</span><span data-lang="zh">品牌借鉴「反蹭」互动模式</span></div><div class="imp-lbl">Imitators</div></div>
+
+    <div class="imp-item reveal" style="transition-delay:.3s"><div class="imp-num" data-target="23000">—</div><div class="imp-desc"><span data-lang="en">Likes & saves on personal Xiaohongshu</span><span data-lang="zh">小红书个人内容获赞与收藏</span></div><div class="imp-lbl">Engagement</div></div>
+
+    <div class="imp-item reveal" style="transition-delay:.35s"><div class="imp-num">0</div><div class="imp-desc"><span data-lang="en">Major complaints across 10,000+ guest interactions</span><span data-lang="zh">10,000+旅客接待零重大客诉</span></div><div class="imp-lbl">Complaints</div></div>
+
+  </div>
+
+</section>
+
+<!-- CONNECTOR -->
+
+<section id="connector">
+
+  <div class="conn-wrap">
+
+    <div class="conn-text">
+
+      <div class="sec-label reveal"><span data-lang="en">05 — The Common Thread</span><span data-lang="zh">05 — 底层逻辑</span></div>
+
+      <h2 class="reveal" style="transition-delay:.05s"><span class="sec-title" data-lang="en">Different fields.<br>Same <em>core skill.</em></span><span class="sec-title-cn" data-lang="zh">不同领域，<br>同一种<em>底层能力</em>。</span></h2>
+
+      <p class="conn-intro reveal" style="transition-delay:.1s">
+
+        <span data-lang="en">Brand marketing. Guesthouse operations. Content creation. Long-term travel. On the surface, these look like completely different worlds. But they all trained the same set of capabilities.</span>
+
+        <span data-lang="zh">品牌营销、民宿经营、内容创作、长期旅行。看起来完全不同的经历，实际上训练的是同一套底层能力。</span>
+
+      </p>
+
+      <div class="conn-abilities reveal" style="transition-delay:.15s">
+
+        <span class="conn-ability"><span data-lang="en">🔍 Understand people</span><span data-lang="zh">🔍 理解人</span></span>
+
+        <span class="conn-ability"><span data-lang="en">💡 Understand needs</span><span data-lang="zh">💡 理解需求</span></span>
+
+        <span class="conn-ability"><span data-lang="en">📊 Read markets</span><span data-lang="zh">📊 理解市场</span></span>
+
+        <span class="conn-ability"><span data-lang="en">🔗 Integrate resources</span><span data-lang="zh">🔗 整合资源</span></span>
+
+        <span class="conn-ability"><span data-lang="en">⚡ Create value</span><span data-lang="zh">⚡ 创造价值</span></span>
+
+      </div>
+
+      <p class="conn-copy reveal" style="transition-delay:.2s">
+
+        <span data-lang="en">A brand campaign and a guesthouse both run on the same logic: read the audience, identify what creates value, build the system, and make it work. Travel strips away assumptions and forces you to understand new markets from scratch. Content creation demands honest feedback from real people in real time. <strong>Every chapter was different. The underlying skill is the same.</strong> Scroll the phone to browse my Xiaohongshu — or click any note to read the full piece.</span>
+
+        <span data-lang="zh">品牌营销和民宿经营运行在同一套逻辑上：读懂受众，找到价值点，建立系统，推动结果。旅行迫使你从零理解新市场，内容创作要求你接受真实的市场反馈。<strong>每段经历表面不同，底层能力是同一种。</strong>滑动右侧手机浏览我的小红书，点击任意笔记查看全文。</span>
+
+      </p>
+
+    </div>
+
+    <!-- 手机模拟：靠左呈现 -->
+
+    <div class="phone-outer reveal" style="transition-delay:.3s">
+
+      <div class="phone">
+
+        <div class="p-notch"></div>
+
+        <div class="p-screen">
+
+          <div class="xhs-app-header">
+
+            <div class="xhs-app-profile">
+
+              <div class="xhs-app-av">
+
+                <img src="images/profile.jpg" alt="K" onerror="this.style.display='none'">K
+
+              </div>
+
+              <div>
+
+                <div class="xhs-app-name">跑来跑去的栗栗</div>
+
+                <div class="xhs-app-bio">✨独自去到陌生的地方，然后留下来</div>
+
+              </div>
+
+            </div>
+
+            <div class="xhs-app-stats-row">
+
+              <div class="xhs-app-stat"><span class="xhs-app-stat-n">43</span><span class="xhs-app-stat-l">关注</span></div>
+
+              <div class="xhs-app-stat"><span class="xhs-app-stat-n">1913</span><span class="xhs-app-stat-l">粉丝</span></div>
+
+              <div class="xhs-app-stat"><span class="xhs-app-stat-n">2.3万</span><span class="xhs-app-stat-l">获赞</span></div>
+
+            </div>
+
+          </div>
+
+          <div class="xhs-feed">
+
+            <div class="xhs-masonry">
+
+              <a href="http://xhslink.com/o/6gADjGKawYH" target="_blank" class="xhs-note">
+
+                <div class="xhs-note-thumb">📿<img src="images/xhs1.jpg" alt="" onerror="this.remove()"></div>
+
+                <div class="xhs-note-meta"><div class="xhs-note-title">25岁，实现了在财神殿长跪不起的自由！</div><div class="xhs-note-bottom"><div class="xhs-note-user"><div class="xhs-note-av"></div><span class="xhs-note-uname">跑来跑去的栗栗</span></div><span class="xhs-note-likes">♡ 1.6万</span></div></div>
+
+              </a>
+
+              <a href="https://xhslink.com/m/2ThmTZrGWfC" target="_blank" class="xhs-note">
+
+                <div class="xhs-note-thumb">🏯<img src="images/xhs6.jpg" alt="" onerror="this.remove()"></div>
+
+                <div class="xhs-note-meta"><div class="xhs-note-title">拉萨 Citywalk | 在圣城超 chill 的漫游指南✨</div><div class="xhs-note-bottom"><div class="xhs-note-user"><div class="xhs-note-av"></div><span class="xhs-note-uname">跑来跑去的栗栗</span></div><span class="xhs-note-likes">♡ 34</span></div></div>
+
+              </a>
+
+              <a href="http://xhslink.com/o/50LNU2saBCy" target="_blank" class="xhs-note">
+
+                <div class="xhs-note-thumb">🍲<img src="images/xhs3.jpg" alt="" onerror="this.remove()"></div>
+
+                <div class="xhs-note-meta"><div class="xhs-note-title">来拉萨住南方小土豆开的店</div><div class="xhs-note-bottom"><div class="xhs-note-user"><div class="xhs-note-av"></div><span class="xhs-note-uname">归朴小义工</span></div><span class="xhs-note-likes">♡ 335</span></div></div>
+
+              </a>
+
+              <a href="http://xhslink.com/o/5FdDUNXIo15" target="_blank" class="xhs-note">
+
+                <div class="xhs-note-thumb">🏞<img src="images/xhs4.jpg" alt="" onerror="this.remove()"></div>
+
+                <div class="xhs-note-meta"><div class="xhs-note-title">虎跳峡不只有一处"人生照片"</div><div class="xhs-note-bottom"><div class="xhs-note-user"><div class="xhs-note-av"></div><span class="xhs-note-uname">跑来跑去的栗栗</span></div><span class="xhs-note-likes">♡ 361</span></div></div>
+
+              </a>
+
+              <a href="http://xhslink.com/o/6WV5LuiiV6P" target="_blank" class="xhs-note">
+
+                <div class="xhs-note-thumb">🏔<img src="images/xhs5.jpg" alt="" onerror="this.remove()"></div>
+
+                <div class="xhs-note-meta"><div class="xhs-note-title">梅里 7 点 20 分 | 她又怎么舍得让期待的人失望 🥹</div><div class="xhs-note-bottom"><div class="xhs-note-user"><div class="xhs-note-av"></div><span class="xhs-note-uname">跑来跑去的栗栗</span></div><span class="xhs-note-likes">♡ 247</span></div></div>
+
+              </a>
+
+              <a href="http://xhslink.com/o/4gGevRdJeeh" target="_blank" class="xhs-note">
+
+                <div class="xhs-note-thumb">🙏<img src="images/xhs2.jpg" alt="" onerror="this.remove()"></div>
+
+                <div class="xhs-note-meta"><div class="xhs-note-title">25岁 | 出发去当义工啦！</div><div class="xhs-note-bottom"><div class="xhs-note-user"><div class="xhs-note-av"></div><span class="xhs-note-uname">跑来跑去的栗栗</span></div><span class="xhs-note-likes">♡ 880</span></div></div>
+
+              </a>
+
+              <a href="https://weixin.qq.com/sph/AdWZUIeiTV" target="_blank" class="xhs-note">
+
+                <div class="xhs-note-thumb">🐕<img src="images/xhs7.jpg" alt="" onerror="this.remove()"></div>
+
+                <div class="xhs-note-meta"><div class="xhs-note-title">连小狗都知道的事</div><div class="xhs-note-bottom"><div class="xhs-note-user"><div class="xhs-note-av"></div><span class="xhs-note-uname">归朴客栈边牧</span></div><span class="xhs-note-likes">♡ 16</span></div></div>
+
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- MAP -->
+
+<section id="map-section">
+
+  <div class="sec-label reveal"><span data-lang="en">06 — Territories × Identities</span><span data-lang="zh">06 — 每个地方，一个身份</span></div>
+
+  <h2 class="reveal" style="transition-delay:.05s">
+
+    <span class="sec-title" data-lang="en">Click a place.<br>Open a story.</span>
+
+    <span class="sec-title-cn" data-lang="zh">点击一个地方，<br>翻开一个身份。</span>
+
+  </h2>
+
+  <p class="map-intro reveal" style="transition-delay:.1s">
+
+    <span data-lang="en">Seven cities. Seven versions of the same person — all equally real. Hover to glow, click to explore (polaroid-style, with two photo slots each).</span>
+
+    <span data-lang="zh">七个城市，七个不同的身份——同样真实。悬浮发光，点击以拍立得方式展开，每处预留两张照片。</span>
+
+  </p>
+
+  <p class="map-hint reveal" style="transition-delay:.15s">
+
+    <span data-lang="en">Hover to highlight · Click to open polaroid</span>
+
+    <span data-lang="zh">悬浮高亮 · 点击翻开拍立得</span>
+
+  </p>
+
+  <div class="map-layout reveal" style="transition-delay:.2s">
+
+    <div class="map-svg-wrap" id="mapWrap"><div class="map-tooltip" id="mapTooltip"></div></div>
+
+    <div class="place-list" id="placeList"></div>
+
+  </div>
+
+</section>
+
+<!-- Polaroid Detail Overlay -->
+
+<div class="detail-overlay" id="detailOverlay" onclick="if(event.target===this)closeDetail()">
+
+  <div class="detail-box" id="detailBox">
+
+    <button class="d-close" onclick="closeDetail()">✕</button>
+
+    <div class="detail-photos">
+
+      <!-- Photo slot 1 -->
+
+      <!-- 替换方式：把对应place_xxx1.jpg放入images文件夹，JS会自动引用 -->
+
+      <div class="detail-photo-slot" id="dPhoto1">
+
+        <span class="photo-hint-icon" id="dIcon1">📷</span>
+
+        <span class="slot-hint" id="dSlot1">Photo 1</span>
+
+      </div>
+
+      <!-- Photo slot 2 -->
+
+      <div class="detail-photo-slot" id="dPhoto2">
+
+        <span class="photo-hint-icon" id="dIcon2">📷</span>
+
+        <span class="slot-hint" id="dSlot2">Photo 2</span>
+
+      </div>
+
+    </div>
+
+    <div class="detail-body">
+
+      <div class="d-tag" id="dTag"></div>
+
+      <div class="d-title" id="dTitle"></div>
+
+      <div class="d-role" id="dRole"></div>
+
+      <div class="d-desc" id="dDesc"></div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<!-- NOW -->
+
+<section id="now">
+
+  <div class="sec-label reveal"><span data-lang="en">07 — Now</span><span data-lang="zh">07 — 此刻</span></div>
+
+  <h2 class="reveal" style="transition-delay:.05s">
+
+    <span class="sec-title" data-lang="en">Work hard.<br>Go <em>further.</em></span>
+
+    <span class="sec-title-cn" data-lang="zh">认真工作，<br>也<em>认真去远方</em>。</span>
+
+  </h2>
+
+  <p class="now-intro reveal" style="transition-delay:.1s">
+
+    <span data-lang="en">
+
+      Outside of work, I'm usually somewhere with bad signal and good views. I hike, I move, I show up in places where I don't speak the language yet — and I try to understand the people there before I take a single photo.<br><br>
+
+      I'm drawn to ethnic cultures, local rituals, and the kind of knowledge that doesn't fit in a guidebook. Tibet wasn't just a backdrop — it was three years of learning how a community actually works.<br><br>
+
+      After office life, after years of wandering — I'm ready to begin again.
+
+    </span>
+
+    <span data-lang="zh">
+
+      工作之外，我通常在信号很差但风景很好的地方。我喜欢徒步、运动、去到那些语言还不通的地方——然后在拍第一张照片之前，先试着了解那里的人。<br><br>
+
+      少数民族文化、当地的仪式与日常、那种写不进攻略的知识，是我真正感兴趣的东西。西藏对我来说不只是一个背景板，而是三年真实的生活与学习。<br><br>
+
+      经历了办公室的日子，也经历了四处漂泊的岁月——现在，我已经准备好重新开始了。
+
+    </span>
+
+  </p>
+
+  <div class="now-grid reveal" style="transition-delay:.2s">
+
+    <div class="now-tag"><span data-lang="en">🥾 Hiker & trail runner</span><span data-lang="zh">🥾 徒步爱好者</span></div>
+
+    <div class="now-tag"><span data-lang="en">🏔 High-altitude wanderer</span><span data-lang="zh">🏔 高原漫游者</span></div>
+
+    <div class="now-tag"><span data-lang="en">🧵 Ethnic culture nerd</span><span data-lang="zh">🧵 民族文化爱好者</span></div>
+
+    <div class="now-tag"><span data-lang="en">📖 Perpetual beginner</span><span data-lang="zh">📖 永远的入门者</span></div>
+
+    <div class="now-tag"><span data-lang="en">🤖 AI native learner</span><span data-lang="zh">🤖 AI原生学习者</span></div>
+
+    <div class="now-tag"><span data-lang="en">· · · list still loading</span><span data-lang="zh">· · · 列表还在续写</span></div>
+
+  </div>
+
+  <div class="now-quote reveal" style="transition-delay:.3s">
+
+    <p data-lang="en">"Understanding a place takes longer than visiting it. That's why I keep going back."</p>
+
+    <p data-lang="zh">"真正了解一个地方，比抵达它需要更长的时间。所以我一直在路上。"</p>
+
+  </div>
+
+</section>
+
+<!-- COLLABORATE -->
+
+<section id="collaborate">
+
+  <div class="sec-label reveal"><span data-lang="en">08 — Collaborate</span><span data-lang="zh">08 — 合作</span></div>
+
+  <h2 class="col-title reveal" style="transition-delay:.1s">
+
+    <span data-lang="en"><em>Open</em> to<br>unexpected things.</span>
+
+    <span data-lang="zh" style="font-family:'Noto Serif SC',serif;font-weight:300"><em>开放</em>接受<br>意想不到的事。</span>
+
+  </h2>
+
+  <div class="col-chips reveal" style="transition-delay:.2s">
+
+    <span class="col-chip"><span data-lang="en">Brand growth roles</span><span data-lang="zh">品牌增长岗位</span></span>
+
+    <span class="col-chip"><span data-lang="en">Consumer & lifestyle brands</span><span data-lang="zh">消费与生活方式品牌</span></span>
+
+    <span class="col-chip"><span data-lang="en">Content strategy</span><span data-lang="zh">内容策略</span></span>
+
+    <span class="col-chip"><span data-lang="en">Marketing & BD</span><span data-lang="zh">市场营销与商务拓展</span></span>
+
+    <span class="col-chip"><span data-lang="en">Travel × hospitality</span><span data-lang="zh">旅行与民宿</span></span>
+
+    <span class="col-chip"><span data-lang="en">Interesting projects</span><span data-lang="zh">有趣的项目</span></span>
+
+  </div>
+
+  <a href="mailto:1005681687@qq.com" class="col-cta reveal" style="transition-delay:.3s">
+
+    <span data-lang="en">Get in touch →</span><span data-lang="zh">联系我 →</span>
+
+  </a>
+
+  <p class="col-info reveal" style="transition-delay:.4s">1005681687@qq.com · 13928392293 · 小红书: 跑来跑去的栗栗</p>
+
+</section>
+
+<footer><span class="f-name">Kitty Chen · 陈玲丽</span><span class="f-meta">Brand × Content × Exploration · 2026</span></footer>
+
+<script>
+
+// ── Lang ──
+
+function setLang(l){
+
+  document.documentElement.lang=l;
+
+  document.querySelectorAll('.lang-btn').forEach(b=>b.classList.toggle('active',(l==='en'&&b.textContent==='EN')||(l==='zh'&&b.textContent==='中')));
+
+}
+
+setLang('en');
+
+// ── Nav ──
+
+window.addEventListener('scroll',()=>document.getElementById('nav').classList.toggle('scrolled',scrollY>60),{passive:true});
+
+// ── Reveal ──
+
+const ro=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')}),{threshold:.08,rootMargin:'0px 0px -40px 0px'});
+
+document.querySelectorAll('.reveal').forEach(el=>ro.observe(el));
+
+// ── Numbers ──
+
+function fmt(n){
+
+  if(n>=100000000)return(n/100000000).toFixed(1)+'亿';
+
+  if(n>=10000000)return(n/10000).toFixed(0)+'万';
+
+  if(n>=1000000)return'¥'+(n/10000).toFixed(0)+'万';
+
+  if(n>=23000)return(n/10000).toFixed(1)+'万';
+
+  return n.toLocaleString();
+
+}
+
+const no=new IntersectionObserver(es=>es.forEach(e=>{
+
+  if(!e.isIntersecting)return;const el=e.target,t=parseInt(el.dataset.target);
+
+  if(!t||el.dataset.done)return;el.dataset.done=1;
+
+  if(t===0){el.textContent='0';return;}
+
+  const dur=1500,s=Date.now();
+
+  const tick=()=>{const p=Math.min((Date.now()-s)/dur,1),ez=1-Math.pow(1-p,3);el.textContent=fmt(Math.round(t*ez));if(p<1)requestAnimationFrame(tick);else el.textContent=fmt(t)};
+
+  requestAnimationFrame(tick);no.unobserve(el);
+
+}),{threshold:.5});
+
+document.querySelectorAll('.imp-num[data-target]').forEach(el=>no.observe(el));
+
+// ── Parallax ──
+
+const hr=document.querySelector('.hero-right');
+
+window.addEventListener('scroll',()=>{if(hr)hr.style.transform=`translateY(${scrollY*.2}px)`},{passive:true});
+
+// ── Lightbox ──
+
+function openLightbox(src){
+
+  const lb=document.getElementById('lightbox');
+
+  document.getElementById('lightboxImg').src=src;
+
+  lb.classList.add('open');
+
+}
+
+function closeLightbox(){document.getElementById('lightbox').classList.remove('open')}
+
+// ── Wuyi carousel ──
+
+let wuyiPos=0;const WUYI_MAX=4;
+
+function wuyiGoTo(i){
+
+  wuyiPos=i;
+
+  const track=document.getElementById('wuyiTrack');
+
+  if(!track)return;
+
+  track.style.transform=`translateX(-${i*20}%)`;
+
+  document.querySelectorAll('.wuyi-dot').forEach((d,j)=>{
+
+    d.style.background=j===i?'var(--clay)':'rgba(200,191,176,.2)';
+
+  });
+
+}
+
+function wuyiNext(){wuyiGoTo(Math.min(wuyiPos+1,WUYI_MAX))}
+
+function wuyiPrev(){wuyiGoTo(Math.max(wuyiPos-1,0))}
+
+// ── Festival carousel ──
+
+let festPos=0;const FEST_MAX=1;
+
+function festGoTo(i){
+
+  festPos=i;
+
+  const slide=document.querySelector('.festival-slide');
+
+  if(!slide)return;
+
+  const w=654;
+
+  document.getElementById('festTrack').style.transform=`translateX(-${i*w}px)`;
+
+  document.querySelectorAll('.festival-dot').forEach((d,j)=>d.classList.toggle('active',j===i));
+
+}
+
+function festNext(){festGoTo(Math.min(festPos+1,FEST_MAX))}
+
+function festPrev(){festGoTo(Math.max(festPos-1,0))}
+
+// ── MAP ──
+
+const PLACES=[
+
+  {id:'baihaba',cn:'白哈巴',en:'Baihaba',region:'新疆 Xinjiang',role:{en:'Life in the taiga',zh:'深度感受阿勒泰生活'},x:94,y:68,
+
+   desc:{en:'The westernmost village in China. I spent time simply living here — morning fog, golden larches at dusk, the unhurried rhythms of Kazakh life.',zh:'中国最西北的村子。在这里，我只是简单地生活着——清晨的雾气，黄昏金色的落叶松，哈萨克人不慌不忙的节奏。'}},
+
+  {id:'yili',cn:'伊犁',en:'Yili',region:'新疆 Xinjiang',role:{en:'Route scout',zh:'行程踩点员'},x:76,y:148,
+
+   desc:{en:'Lavender fields, Kazakh grasslands — I came to find what was worth visiting. The job of the scout: see everything, recommend only what\'s real.',zh:'薰衣草田、哈萨克草原——我来这里是为了找出真正值得去的地方。踩点的工作：看遍所有，只推荐真实的。'}},
+
+  {id:'kailash',cn:'冈仁波齐',en:'Mt. Kailash',region:'西藏 Tibet',role:{en:'Believer in nature',zh:'大自然的信徒'},x:158,y:296,
+
+   desc:{en:'The holy mountain. Kora at dawn. 5,630 meters. Some places don\'t ask you to do anything — they just change you.',zh:'神山。清晨转山。5630米。有些地方不要求你做任何事——它只是改变了你。'}},
+
+  {id:'lhasa',cn:'拉萨',en:'Lhasa',region:'西藏 Tibet · 3,650m',role:{en:'All-round guesthouse manager',zh:'民宿全能管家'},x:284,y:272,
+
+   desc:{en:'2.5 years. Administrator, OTA manager, guest experience lead, social media operator, and the person who figures out what to do when something goes wrong at altitude.',zh:'两年半。行政、OTA运营、宾客体验、新媒体内容，以及那个在高原突发状况时知道该怎么办的人。'}},
+
+  {id:'dali',cn:'大理',en:'Dali',region:'云南 Yunnan',role:{en:'Tie-dye artisan',zh:'扎染师'},x:340,y:366,
+
+   desc:{en:'Learned the old craft of batiking by hand. The process is irreversible — you can\'t control exactly how the color lands. I found that beautiful.',zh:'学习手工扎染这门古老工艺。这个过程是不可逆的——你无法精确控制颜色落点。我觉得这很美。'}},
+
+  {id:'lijiang',cn:'丽江',en:'Lijiang',region:'云南 Yunnan',role:{en:'Tea tray stall selling tile-cats',zh:'画瓦猫的茶盘摊主'},x:350,y:350,
+
+   desc:{en:'Set up a small street stall painting traditional Yunnan tile-cats onto tea trays. Sold them to travelers. Every piece different, every buyer a brief connection.',zh:'在街边摆了个小摊，把云南传统瓦猫画在茶盘上出售给旅行者。每件作品都不一样，每个买家都是一次短暂的连接。'}},
+
+  {id:'shenzhen',cn:'深圳',en:'Shenzhen',region:'广东 Guangdong',role:{en:'English teaching assistant',zh:'英语助教'},x:448,y:360,
+
+   desc:{en:'Assisted in English classes for kids — reading picture books, correcting pronunciation, watching small humans encounter language for the first time.',zh:'在少儿英语课程担任助教——读绘本、纠正发音，看着小小的人类第一次与语言相遇。'}},
+
+];
+
+const VW=580,VH=400;
+
+const NS='http://www.w3.org/2000/svg';
+
+let activeId=null;
+
+function buildMap(){
+
+  const svg=document.createElementNS(NS,'svg');
+
+  svg.setAttribute('viewBox',`0 0 ${VW} ${VH}`);
+
+  svg.style.cssText='display:block;width:100%;height:auto';
+
+  const defs=document.createElementNS(NS,'defs');
+
+  defs.innerHTML=`
+
+    <radialGradient id="bgG" cx="45%" cy="58%" r="72%"><stop offset="0%" stop-color="#1c2c1b"/><stop offset="100%" stop-color="#090e09"/></radialGradient>
+
+    <filter id="glowW"><feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+
+    <filter id="glow2"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+
+    <style>@keyframes pr{0%,100%{opacity:.4;transform:scale(1)}50%{opacity:0;transform:scale(1.8)}}.pr{transform-box:fill-box;transform-origin:center;animation:pr 2.4s ease-in-out infinite}</style>`;
+
+  svg.appendChild(defs);
+
+  const bg=document.createElementNS(NS,'rect');
+
+  bg.setAttribute('width',VW);bg.setAttribute('height',VH);bg.setAttribute('fill','url(#bgG)');svg.appendChild(bg);
+
+  const grid=document.createElementNS(NS,'g');
+
+  grid.setAttribute('stroke','rgba(200,191,176,0.04)');grid.setAttribute('stroke-width','0.5');
+
+  for(let x=0;x<VW;x+=50){const l=document.createElementNS(NS,'line');l.setAttribute('x1',x);l.setAttribute('y1',0);l.setAttribute('x2',x);l.setAttribute('y2',VH);grid.appendChild(l)}
+
+  for(let y=0;y<VH;y+=40){const l=document.createElementNS(NS,'line');l.setAttribute('x1',0);l.setAttribute('y1',y);l.setAttribute('x2',VW);l.setAttribute('y2',y);grid.appendChild(l)}
+
+  svg.appendChild(grid);
+
+  // ridges
+
+  const rg=document.createElementNS(NS,'g');rg.setAttribute('fill','none');rg.setAttribute('stroke-linecap','round');
+
+  ['M65 300 Q130 278 185 283 Q238 288 270 268 Q315 252 358 262 Q398 272 418 252','M82 292 Q148 270 200 275 Q250 280 274 262 Q318 245 360 255','M98 285 Q162 264 210 268 Q258 274 276 256','M50 192 Q83 176 112 184 Q142 194 156 180 Q172 164 192 170','M55 202 Q88 186 118 194 Q150 204 162 190','M46 142 Q96 128 146 138 Q196 148 236 133','M52 152 Q102 138 152 148','M76 64 Q106 54 136 62 Q166 70 190 59','M310 320 Q338 308 358 318 Q382 328 402 313','M174 230 Q224 220 264 228 Q304 236 332 222'].forEach((d,i)=>{
+
+    const p=document.createElementNS(NS,'path');p.setAttribute('d',d);p.setAttribute('stroke',`rgba(200,191,176,${0.15-i*0.01})`);p.setAttribute('stroke-width',i<3?1.4:i<6?1:0.6);rg.appendChild(p);
+
+  });
+
+  svg.appendChild(rg);
+
+  // peaks
+
+  [[284,268,22],[156,282,18],[196,284,14],[236,276,16],[164,174,16],[120,182,12]].forEach(([tx,ty,th])=>{
+
+    const tw=th*.85;
+
+    const tri=document.createElementNS(NS,'polygon');tri.setAttribute('points',`${tx},${ty-th} ${tx-tw},${ty} ${tx+tw},${ty}`);tri.setAttribute('fill','rgba(200,191,176,0.09)');tri.setAttribute('stroke','rgba(200,191,176,0.18)');tri.setAttribute('stroke-width','0.6');svg.appendChild(tri);
+
+    const cw=tw*.38,ch=th*.38;const cap=document.createElementNS(NS,'polygon');cap.setAttribute('points',`${tx},${ty-th} ${tx-cw},${ty-th+ch} ${tx+cw},${ty-th+ch}`);cap.setAttribute('fill','rgba(255,255,255,0.16)');svg.appendChild(cap);
+
+  });
+
+  // region labels
+
+  [['新 疆',155,114],['西 藏',252,302],['云 南',362,344],['广东',448,375]].forEach(([t,x,y])=>{
+
+    const el=document.createElementNS(NS,'text');el.setAttribute('x',x);el.setAttribute('y',y);el.setAttribute('fill','rgba(200,191,176,0.07)');el.setAttribute('font-size','16');el.setAttribute('font-family','Noto Serif SC,serif');el.setAttribute('text-anchor','middle');el.setAttribute('letter-spacing','5');el.textContent=t;svg.appendChild(el);
+
+  });
+
+  // pins
+
+  PLACES.forEach(p=>{
+
+    const g=document.createElementNS(NS,'g');g.style.cursor='pointer';
+
+    const pulse=document.createElementNS(NS,'circle');pulse.setAttribute('cx',p.x);pulse.setAttribute('cy',p.y);pulse.setAttribute('r',10);pulse.setAttribute('fill','rgba(200,191,176,0.12)');pulse.setAttribute('class','pr');pulse.style.animationDelay=(Math.random()*2)+'s';g.appendChild(pulse);
+
+    const dot=document.createElementNS(NS,'circle');dot.setAttribute('cx',p.x);dot.setAttribute('cy',p.y);dot.setAttribute('r',4.5);dot.setAttribute('fill','rgba(200,191,176,0.72)');dot.setAttribute('stroke','rgba(200,191,176,0.3)');dot.setAttribute('stroke-width','0.8');dot.setAttribute('id','dot-'+p.id);g.appendChild(dot);
+
+    const lbl=document.createElementNS(NS,'text');lbl.setAttribute('x',p.x+7);lbl.setAttribute('y',p.y+4);lbl.setAttribute('fill','rgba(200,191,176,0.48)');lbl.setAttribute('font-size','8.5');lbl.setAttribute('font-family','Noto Serif SC,serif');lbl.setAttribute('id','lbl-'+p.id);lbl.textContent=p.cn;g.appendChild(lbl);
+
+    g.addEventListener('mouseenter',()=>{
+
+      if(activeId===p.id)return;
+
+      dot.setAttribute('fill','rgba(200,241,53,0.7)');dot.setAttribute('r','5.5');lbl.setAttribute('fill','rgba(200,241,53,0.7)');
+
+      const tt=document.getElementById('mapTooltip'),wrap=document.getElementById('mapWrap');
+
+      const ww=wrap.clientWidth,wh=wrap.clientHeight;
+
+      tt.textContent=p.cn+' · '+p.role[document.documentElement.lang||'en'];
+
+      tt.style.left=Math.min(p.x/VW*ww+12,ww-180)+'px';tt.style.top=Math.max(p.y/VH*wh-36,4)+'px';tt.style.opacity='1';
+
+    });
+
+    g.addEventListener('mouseleave',()=>{
+
+      if(activeId===p.id)return;
+
+      dot.setAttribute('fill','rgba(200,191,176,0.72)');dot.setAttribute('r','4.5');lbl.setAttribute('fill','rgba(200,191,176,0.48)');
+
+      document.getElementById('mapTooltip').style.opacity='0';
+
+    });
+
+    g.addEventListener('click',()=>{
+
+      if(activeId&&activeId!==p.id){
+
+        const od=document.getElementById('dot-'+activeId);const ol=document.getElementById('lbl-'+activeId);
+
+        if(od){od.setAttribute('fill','rgba(200,191,176,0.72)');od.setAttribute('r','4.5');od.removeAttribute('filter')}
+
+        if(ol){ol.setAttribute('fill','rgba(200,191,176,0.48)');ol.removeAttribute('filter')}
+
+        document.querySelectorAll('.pl-item').forEach(el=>el.classList.remove('active'));
+
+      }
+
+      activeId=p.id;
+
+      dot.setAttribute('fill','rgba(200,241,53,0.95)');dot.setAttribute('r','6');dot.setAttribute('filter','url(#glowW)');
+
+      lbl.setAttribute('fill','rgba(200,241,53,0.88)');lbl.setAttribute('filter','url(#glow2)');
+
+      document.getElementById('mapTooltip').style.opacity='0';
+
+      const pi=document.getElementById('pi-'+p.id);if(pi){pi.classList.add('active');pi.scrollIntoView({block:'nearest',behavior:'smooth'})}
+
+      openDetail(p);
+
+    });
+
+    svg.appendChild(g);
+
+  });
+
+  document.getElementById('mapWrap').appendChild(svg);
+
+}
+
+buildMap();
+
+// place list
+
+const pl=document.getElementById('placeList');
+
+PLACES.forEach(p=>{
+
+  const d=document.createElement('div');d.className='pl-item';d.id='pi-'+p.id;
+
+  d.innerHTML=`<div class="pl-en">${p.region}</div><div class="pl-cn">${p.cn}</div><div class="pl-role" id="plr-${p.id}">${p.role.en}</div>`;
+
+  d.onclick=()=>{const dot=document.getElementById('dot-'+p.id);if(dot&&dot.parentNode)dot.parentNode.dispatchEvent(new MouseEvent('click'))};
+
+  pl.appendChild(d);
+
+});
+
+// Update role labels when lang changes
+
+const origSetLang=window.setLang;
+
+window.setLang=function(l){
+
+  origSetLang(l);
+
+  PLACES.forEach(p=>{const el=document.getElementById('plr-'+p.id);if(el)el.textContent=p.role[l]||p.role.en});
+
+};
+
+// detail — polaroid style
+
+function openDetail(p){
+
+  const lang=document.documentElement.lang||'en';
+
+  document.getElementById('dTag').textContent=p.region;
+
+  document.getElementById('dTitle').textContent=p.cn;
+
+  document.getElementById('dRole').textContent=p.role[lang]||p.role.en;
+
+  document.getElementById('dDesc').textContent=p.desc[lang]||p.desc.en;
+
+  // Photo slots — each place has place_xxx1.jpg and place_xxx2.jpg
+
+  // Replace: put images/place_baihaba1.jpg etc in images folder
+
+  const img1=`images/place_${p.id}1.jpg`;
+
+  const img2=`images/place_${p.id}2.jpg`;
+
+  const slot1=document.getElementById('dPhoto1');const slot2=document.getElementById('dPhoto2');
+
+  slot1.innerHTML=`<img src="${img1}" alt="${p.cn}1" onerror="this.style.display='none'"><span class="photo-hint-icon">📷</span><span class="slot-hint">place_${p.id}1.jpg</span>`;
+
+  slot2.innerHTML=`<img src="${img2}" alt="${p.cn}2" onerror="this.style.display='none'"><span class="photo-hint-icon">📷</span><span class="slot-hint">place_${p.id}2.jpg</span>`;
+
+  const box=document.getElementById('detailBox');
+
+  const rotations=[-2,-1,0,1,2];
+
+  box.style.transform=`rotate(${rotations[Math.floor(Math.random()*5)]}deg)`;
+
+  document.getElementById('detailOverlay').classList.add('show');
+
+  setTimeout(()=>{box.style.transform='rotate(0deg)'},50);
+
+}
+
+function closeDetail(){
+
+  document.getElementById('detailOverlay').classList.remove('show');
+
+  if(activeId){
+
+    const od=document.getElementById('dot-'+activeId);const ol=document.getElementById('lbl-'+activeId);
+
+    if(od){od.setAttribute('fill','rgba(200,191,176,0.72)');od.setAttribute('r','4.5');od.removeAttribute('filter')}
+
+    if(ol){ol.setAttribute('fill','rgba(200,191,176,0.48)');ol.removeAttribute('filter')}
+
+    document.querySelectorAll('.pl-item').forEach(el=>el.classList.remove('active'));
+
+    activeId=null;
+
+  }
+
+}
+
+window.closeDetail=closeDetail;
+
+</script>
+
+</body>
+
+</html>
